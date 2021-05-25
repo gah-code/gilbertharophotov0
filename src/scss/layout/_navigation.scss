@@ -22,7 +22,6 @@
   }
 
   &__icon::before {
-    font-size: 2rem;
     color: rgba($color-grey-dark-3, 0.8);
     font-weight: 700;
     transition: all 0.3s;
@@ -31,7 +30,7 @@
     content: '\f083';
 
     @include respond(phone) {
-      font-size: 4rem;
+      font-size: 3.8rem;
     }
   }
 
@@ -57,7 +56,7 @@
     }
 
     @include respond(phone) {
-      margin-left: 2.5rem;
+      margin-left: 2rem;
     }
   }
 
@@ -70,11 +69,12 @@
     border-radius: 2rem;
     letter-spacing: 1px;
     font-weight: 400;
+    transition: all 0.2s;
 
     &:hover {
       transform: translateY(-3px);
-      box-shadow: 0 1rem 2rem rgba($color-black, 0.5);
-      background-color: rgba($color-primary-dark, 0.9);
+      box-shadow: 0 1rem 2rem rgba($color-primary-light, 0.6);
+      background-color: rgba($color-primary-dark, 0.8);
 
       &::after {
         transform: scaleX(1.4) scaleY(1.6);
@@ -83,7 +83,7 @@
     }
 
     @include respond(phone) {
-      padding: 0.9rem 1.5rem;
+      padding: 0.8rem 1.1rem;
     }
   }
 }

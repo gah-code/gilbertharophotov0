@@ -128,29 +128,18 @@ strong {
     font-size: 1.5rem;
     border-radius: 3rem;
     background-color: rgba(0, 0, 0, 0.7);
-    color: #f1efef; }
+    color: #f1efef;
+    transition: all 0.3s; }
     @media only screen and (max-width: 56.25em) {
       .form__book-btn, .form:link, .form:visited {
         padding: 1.2rem 3rem; } }
     .form__book-btn:hover, .form:link:hover, .form:visited:hover {
       transform: translateY(-3px);
-      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
+      box-shadow: 0 1rem 2rem rgba(29, 97, 128, 0.6);
+      background-color: rgba(29, 97, 128, 0.8); }
       .form__book-btn:hover::after, .form:link:hover::after, .form:visited:hover::after {
         transform: scaleX(1.4) scaleY(1.6);
         opacity: 0; }
-    .form__book-btn::after, .form:link::after, .form:visited::after {
-      background-color: #fff; }
-    .form__book-btn::after, .form:link::after, .form:visited::after {
-      content: '';
-      display: inline-block;
-      height: 100%;
-      width: 100%;
-      border-radius: 10rem;
-      position: absolute;
-      top: 0;
-      left: 0;
-      z-index: -1;
-      transition: all 0.4s; }
 
 .btn, .btn:link, .btn:visited {
   text-transform: uppercase;
@@ -229,11 +218,11 @@ strong {
   border-radius: 2px; }
   @media only screen and (max-width: 56.25em) {
     .container__photo {
-      width: 50%;
+      width: 53%;
       position: relative; } }
   @media only screen and (max-width: 37.5em) {
     .container__photo {
-      width: 45.5555555%;
+      width: 48%;
       position: relative; } }
   .container__photo-p1 {
     top: -1rem;
@@ -295,13 +284,14 @@ strong {
 .services {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  margin: 0 12rem;
+  margin: 0 15rem;
   row-gap: 25px; }
   @media only screen and (max-width: 56.25em) {
     .services {
       margin: 0 10rem; } }
   @media only screen and (max-width: 37.5em) {
     .services {
+      row-gap: 10px;
       margin: 0; } }
 
 .services__img {
@@ -309,8 +299,9 @@ strong {
   padding: 2rem; }
   @media only screen and (max-width: 56.25em) {
     .services__img {
+      width: 98%;
       padding: 0;
-      align-self: center; } }
+      align-self: unset; } }
 
 .services__item {
   align-self: center;
@@ -331,27 +322,43 @@ strong {
   height: 5.5rem;
   width: 5.5rem;
   border-radius: 50%;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
   text-align: center; }
   @media only screen and (max-width: 56.25em) {
     .services__icon {
       height: 5rem;
       width: 5rem;
       margin-bottom: 1rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .services__icon {
+      height: 4.5rem;
+      width: 4.5rem; } }
+  .services__icon:hover {
+    background-color: rgba(29, 97, 128, 0.6); }
 
 .services__icons {
   font-size: 2em;
-  color: beige; }
+  color: beige;
+  transition: all; }
   .services__icons-1::before {
     content: '\f004'; }
   .services__icons-2::before {
     content: '\f005'; }
   .services__icons-3::before {
     content: '\f185'; }
+  @media only screen and (max-width: 37.5em) {
+    .services__icons {
+      font-size: 1.7em; } }
+  .services__icons-1:hover, .services__icons-2:hover, .services__icons-3:hover {
+    transform: translateY(-3px);
+    color: rgba(255, 234, 167, 0.8); }
 
 .services__header {
-  font-size: 2rem;
+  font-size: 2.3rem;
   margin-bottom: 1rem; }
+  @media only screen and (max-width: 56.25em) {
+    .services__header {
+      margin-bottom: 0.8rem; } }
 
 .icon::before {
   font-family: 'Font Awesome 5 Free';
@@ -415,20 +422,24 @@ strong {
         grid-column: 1 / 2; } }
   .about__heading-1 {
     justify-self: left;
-    font-size: 1.7rem;
-    letter-spacing: 1.8px;
+    font-size: 1.5rem;
+    letter-spacing: 1.7px;
     text-transform: uppercase;
-    margin-bottom: 0.5rem; }
+    margin-bottom: 0.1rem;
+    color: rgba(29, 97, 128, 0.2); }
   .about__heading-2 {
     justify-self: left;
-    font-size: 3rem;
+    font-size: 3.2rem;
     letter-spacing: 2px;
     letter-spacing: 2px;
     margin-bottom: 0.5rem; }
   .about__text {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     font-style: italic;
     margin-bottom: 4rem; }
+    @media only screen and (max-width: 56.25em) {
+      .about__text {
+        margin-bottom: 2rem; } }
 
 .footer {
   background-color: rgba(29, 97, 128, 0.3);
@@ -555,12 +566,20 @@ strong {
         font-size: 1.5rem;
         text-align: center; } }
   .header .header__btn {
-    grid-column: 1 / 2; }
+    grid-column: 1 / 2;
+    transition: all 0.3s; }
     @media only screen and (max-width: 37.5em) {
       .header .header__btn {
         margin: 1.5rem 0;
         grid-column: 1 / 2;
         grid-row: 4 / 5; } }
+    .header .header__btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 1rem 2rem rgba(29, 97, 128, 0.6);
+      background-color: rgba(29, 97, 128, 0.8); }
+      .header .header__btn:hover::after {
+        transform: scaleX(1.4) scaleY(1.6);
+        opacity: 0; }
   .header .header__img {
     width: 100%;
     grid-column: 2 / 3;
@@ -589,7 +608,7 @@ strong {
   z-index: -1;
   opacity: 1;
   transform: scale(1.07, 1.05);
-  background-color: #1d61804f; }
+  background-color: rgba(153, 153, 153, 0.2); }
 
 .navigation {
   width: 100%;
@@ -609,7 +628,6 @@ strong {
       .navigation__bar {
         justify-content: center; } }
   .navigation__icon::before {
-    font-size: 2rem;
     color: rgba(51, 51, 51, 0.8);
     font-weight: 700;
     transition: all 0.3s;
@@ -618,7 +636,7 @@ strong {
     content: '\f083'; }
     @media only screen and (max-width: 37.5em) {
       .navigation__icon::before {
-        font-size: 4rem; } }
+        font-size: 3.8rem; } }
   .navigation__list {
     display: flex;
     list-style: none;
@@ -635,7 +653,7 @@ strong {
         margin-left: 3rem; } }
     @media only screen and (max-width: 37.5em) {
       .navigation__item {
-        margin-left: 2.5rem; } }
+        margin-left: 2rem; } }
   .navigation__link {
     color: #fff;
     text-decoration: none;
@@ -644,17 +662,18 @@ strong {
     padding: 0.9rem 1.9rem;
     border-radius: 2rem;
     letter-spacing: 1px;
-    font-weight: 400; }
+    font-weight: 400;
+    transition: all 0.2s; }
     .navigation__link:hover {
       transform: translateY(-3px);
-      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);
-      background-color: rgba(29, 97, 128, 0.9); }
+      box-shadow: 0 1rem 2rem rgba(29, 97, 128, 0.6);
+      background-color: rgba(29, 97, 128, 0.8); }
       .navigation__link:hover::after {
         transform: scaleX(1.4) scaleY(1.6);
         opacity: 0; }
     @media only screen and (max-width: 37.5em) {
       .navigation__link {
-        padding: 0.9rem 1.5rem; } }
+        padding: 0.8rem 1.1rem; } }
 
 .section-introduction {
   background-color: #eee;
@@ -662,32 +681,35 @@ strong {
   @media only screen and (max-width: 56.25em) {
     .section-introduction {
       margin-top: -10rem;
-      padding: 20rem 0; } }
+      padding: 20rem 1rem; } }
 
 .section-one {
   background-color: rgba(29, 97, 128, 0.1);
-  padding: 20rem 5rem; }
+  padding: 18rem 5rem; }
   @media only screen and (max-width: 56.25em) {
     .section-one {
-      padding: 15rem 3.5rem; } }
+      padding: 15rem 3rem; } }
 
 .section-two {
   background-color: #eee;
-  padding: 15rem 5rem;
+  padding: 18rem 5rem;
   margin: 0 auto; }
+  @media only screen and (max-width: 56.25em) {
+    .section-two {
+      padding: 15rem 3rem; } }
 
 .section-three {
-  padding: 15rem 18rem; }
+  padding: 18rem 18rem; }
   @media only screen and (max-width: 56.25em) {
     .section-three {
-      padding: 10rem 5rem; } }
+      padding: 15rem 5rem; } }
 
 .section-four {
-  padding: 15rem 0;
+  padding: 18rem 0;
   background-color: #f7f7f7; }
   @media only screen and (max-width: 56.25em) {
     .section-four {
-      padding: 10rem 2rem; } }
+      padding: 15rem 2rem; } }
 
 .section {
   border-top: 1px solid #ddd; }
@@ -716,9 +738,11 @@ strong {
 .section__header {
   font-size: 4rem;
   line-height: 1.3;
-  font-weight: 500; }
+  font-weight: 500;
+  margin-bottom: 10rem; }
   @media only screen and (max-width: 56.25em) {
     .section__header {
+      margin-bottom: 12rem;
       text-align: center; } }
 
 

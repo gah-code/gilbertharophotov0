@@ -71,23 +71,28 @@
 
   &__heading-1 {
     justify-self: left;
-    font-size: 1.7rem;
-    letter-spacing: 1.8px;
+    font-size: 1.5rem;
+    letter-spacing: 1.7px;
     text-transform: uppercase;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.1rem;
+    color: rgba($color-primary-dark, 0.2);
   }
 
   &__heading-2 {
     justify-self: left;
-    font-size: 3rem;
+    font-size: 3.2rem;
     letter-spacing: 2px;
     letter-spacing: 2px;
     margin-bottom: 0.5rem;
   }
 
   &__text {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     font-style: italic;
     margin-bottom: 4rem;
+
+    @include respond(tab-port) {
+      margin-bottom: 2rem;
+    }
   }
 }

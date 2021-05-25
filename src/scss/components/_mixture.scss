@@ -42,12 +42,12 @@
   border-radius: 2px;
 
   @include respond(tab-port) {
-    width: 50%;
+    width: 53%;
     position: relative;
   }
 
   @include respond(phone) {
-    width: 45.5555555%;
+    width: 48%;
     position: relative;
   }
 

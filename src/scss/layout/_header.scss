@@ -77,11 +77,23 @@
 
   .header__btn {
     grid-column: 1 / 2;
+    transition: all 0.3s;
 
     @include respond(phone) {
       margin: 1.5rem 0;
       grid-column: 1 / 2;
       grid-row: 4 / 5;
+    }
+
+    &:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 1rem 2rem rgba($color-primary-light, 0.6);
+      background-color: rgba($color-primary-dark, 0.8);
+
+      &::after {
+        transform: scaleX(1.4) scaleY(1.6);
+        opacity: 0;
+      }
     }
   }
 
@@ -121,7 +133,7 @@
   transform: scale(1.07, 1.05);
   // skewX(-15deg);
   // background-image: var(--gradient-primary);
-  background-color: $color-primary-light;
+  background-color: rgba($color-grey-dark-2, 0.2);
 }
 
 // .header {

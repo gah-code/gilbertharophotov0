@@ -147,21 +147,21 @@ module.exports = {
 module.exports = "/wed-1.fdd0a09c.jpg";
 },{}],"resources/images/wedding/wed-2-b.jpg":[function(require,module,exports) {
 module.exports = "/wed-2-b.574610a4.jpg";
-},{}],"resources/images/wedding/wed-2-large.jpg":[function(require,module,exports) {
-module.exports = "/wed-2-large.743ade08.jpg";
 },{}],"resources/images/wedding/wed-2.jpg":[function(require,module,exports) {
 module.exports = "/wed-2.7da5ca50.jpg";
+},{}],"resources/images/wedding/wed-2-large.jpg":[function(require,module,exports) {
+module.exports = "/wed-2-large.743ade08.jpg";
 },{}],"resources/images/wedding/wed-3.jpg":[function(require,module,exports) {
 module.exports = "/wed-3.da704376.jpg";
 },{}],"resources/images/wedding/*.jpg":[function(require,module,exports) {
 module.exports = {
   "wed-1": require("./wed-1.jpg"),
   "wed-2-b": require("./wed-2-b.jpg"),
-  "wed-2-large": require("./wed-2-large.jpg"),
   "wed-2": require("./wed-2.jpg"),
+  "wed-2-large": require("./wed-2-large.jpg"),
   "wed-3": require("./wed-3.jpg")
 };
-},{"./wed-1.jpg":"resources/images/wedding/wed-1.jpg","./wed-2-b.jpg":"resources/images/wedding/wed-2-b.jpg","./wed-2-large.jpg":"resources/images/wedding/wed-2-large.jpg","./wed-2.jpg":"resources/images/wedding/wed-2.jpg","./wed-3.jpg":"resources/images/wedding/wed-3.jpg"}],"../node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
+},{"./wed-1.jpg":"resources/images/wedding/wed-1.jpg","./wed-2-b.jpg":"resources/images/wedding/wed-2-b.jpg","./wed-2.jpg":"resources/images/wedding/wed-2.jpg","./wed-2-large.jpg":"resources/images/wedding/wed-2-large.jpg","./wed-3.jpg":"resources/images/wedding/wed-3.jpg"}],"../node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
 var bundleURL = null;
 
 function getBundleURLCached() {
@@ -273,7 +273,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52442" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49692" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
