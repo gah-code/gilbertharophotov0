@@ -14,7 +14,7 @@
   padding: 18rem 5rem;
 
   @include respond(tab-port) {
-    padding: 15rem 3rem;
+    padding: 10rem 3rem;
   }
 }
 
@@ -34,7 +34,7 @@
   padding: 18rem 18rem;
 
   @include respond(tab-port) {
-    padding: 15rem 5rem;
+    padding: 10rem 5rem;
   }
 }
 
@@ -51,6 +51,8 @@
 //// SECTION BOX
 .section {
   border-top: 1px solid #ddd;
+
+  transition: transform 1s, opacity 1s;
 }
 
 .section--hidden {

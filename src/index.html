@@ -12,11 +12,11 @@
       crossorigin="anonymous"
     />
     <title>Gilbert Haro Photo</title>
-
     <script src="js/main.js" defer></script>
+    <script src="js/animate.js"></script>
   </head>
   <body>
-    <header class="header">
+    <header class="header" id="section--1">
       <div class="navigation">
         <nav class="navigation__bar">
           <div class="navigation__icon icon"></div>
@@ -27,13 +27,13 @@
 
           <ul class="navigation__list">
             <li class="navigation__item">
-              <a href="#" class="navigation__link">Home</a>
+              <a href="#section--1" class="navigation__link">Home</a>
             </li>
             <li class="navigation__item">
-              <a href="#" class="navigation__link">About</a>
+              <a href="#section--3" class="navigation__link">About</a>
             </li>
             <li class="navigation__item">
-              <a href="#" class="navigation__link">Booking</a>
+              <a href="#section--4" class="navigation__link">Booking</a>
             </li>
             <!-- <li class="navigation__item">
               <a href="#" class="navigation__link">Blog</a>
@@ -86,10 +86,11 @@
         </div>
       </section>
 
-      <section class="section-one" id="section--1">
+      <section class="section-one section">
         <div class="mixture">
           <div class="container">
             <img
+              loading="lazy"
               srcset="
                 ./resources/images/engagement/eng-1.jpg        300w,
                 ./resources/images/engagement/eng-1-large.jpg 1000w
@@ -101,6 +102,7 @@
             />
 
             <img
+              loading="lazy"
               srcset="
                 ./resources/images/family/fam-3.jpg        300w,
                 ./resources/images/family/fam-3-large.jpg 1000w
@@ -112,6 +114,7 @@
             />
 
             <img
+              loading="lazy"
               srcset="
                 ./resources/images/wedding/wed-2.jpg        300w,
                 ./resources/images/wedding/wed-2-large.jpg 1000w
@@ -146,6 +149,7 @@
 
         <div class="services">
           <img
+            loading="lazy"
             src="./resources/images/wedding/wed-3.jpg"
             alt=""
             class="services__img"
@@ -165,14 +169,18 @@
               <p class="services__icons services__icons-2 icon"></p>
             </div>
             <h1 class="services__header">Engagement</h1>
-            <p>Make your engagement an adventure and one to remember!</p>
+            <p>
+              Make your engagement session one to remember with an adventure!
+            </p>
           </div>
           <img
+            loading="lazy"
             src="./resources/images/engagement/eng-2.jpg"
             alt=""
             class="services__img"
           />
           <img
+            loading="lazy"
             src="./resources/images/family/fam-1.jpg"
             alt=""
             class="services__img"
@@ -189,22 +197,23 @@
           </div>
         </div>
       </section>
-      <section class="section-three">
-        <div class="row">
-          <div class="section-title">
-            <h2 class="section__description">About</h2>
-            <h3 class="section__header">Why I photograph</h3>
-          </div>
+      <section class="section-three section" id="section--3">
+        <div class="section-title">
+          <h2 class="section__description">About</h2>
+          <h3 class="section__header">Why I photograph</h3>
         </div>
+
         <div class="about">
           <div class="about__pictures">
             <img
-              src="./resources/images/family/fam-1.jpg"
+              loading="lazy"
+              src="./resources/images/branding/branding-1.jpg"
               alt=""
               class="about__img-1"
             />
             <img
-              src="./resources/images/family/fam-3.jpg"
+              loading="lazy"
+              src="./resources/images/branding/branding-2.jpg"
               alt=""
               class="about__img-2"
             />
@@ -214,17 +223,20 @@
             <h3 class="about__heading-1">Photogapher</h3>
             <h4 class="about__heading-2">Gilbert A Haro</h4>
             <p class="about__text">
-              My determination for building a life and career around doing what
-              I love has been the core belief of what keeps me focsed on making
-              that all reality, paths may sway yet the end point stays the same.
-              Photography to me is more then clicking away behind a lens, it's a
-              gateway to learning new concepts and experiencing fresh challenges
-              that has made me the person I am today.
+              Growing up keeping focused in school was difficult, It wasn't
+              until my 20s I finally took on the challenge of photography.
+              Studdenly retaining attention wasn't such a obstacle, photography
+              provided me encouragement, discipline and a passion for learning.
+              As a kid I always leaned towards creative thinking patterns, now
+              being 4 years into pursueing a career around the arts I've taken
+              on new challenges around web development along with strengthening
+              my photography techniques. Where ever life takes me, a passion for
+              the arts is my foundation!
             </p>
           </div>
         </div>
       </section>
-      <section class="section section-four">
+      <section class="section section-four" id="section--4">
         <div class="row">
           <div class="section-title">
             <h2 class="section__description">Booking</h2>

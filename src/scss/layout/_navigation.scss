@@ -3,7 +3,7 @@
   height: 8rem;
   z-index: 300;
   position: fixed;
-  // background-color: $color-primary-light;
+  //background-color: $color-primary-light;
 
   @include respond(phone) {
     height: 6rem;
@@ -85,5 +85,11 @@
     @include respond(phone) {
       padding: 0.8rem 1.1rem;
     }
+  }
+
+  .navigation__bar.sticky {
+    z-index: 300;
+    position: fixed;
+    background-color: rgba($color-white, 0.8);
   }
 }
