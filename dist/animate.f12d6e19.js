@@ -22716,6 +22716,20 @@ document.querySelector('.navigation__list') // Parent Element
     });
   }
 }); ///////////////////////////////
+/// HEADER BTN
+
+document.querySelector('.header__box') // Parent Element
+.addEventListener('click', function (e) {
+  e.preventDefault();
+
+  if (e.target.classList.contains('header__btn')) {
+    var id = e.target.getAttribute('href');
+    console.log(id);
+    document.querySelector(id).scrollIntoView({
+      behavior: 'smooth'
+    });
+  }
+}); ///////////////////////////////
 /// STICKY NAVIGATION: Intersection Observer API
 
 var header = document.querySelector('.header');
@@ -22783,7 +22797,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50955" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50070" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

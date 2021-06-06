@@ -22716,6 +22716,20 @@ document.querySelector('.navigation__list') // Parent Element
     });
   }
 }); ///////////////////////////////
+/// HEADER BTN
+
+document.querySelector('.header__box') // Parent Element
+.addEventListener('click', function (e) {
+  e.preventDefault();
+
+  if (e.target.classList.contains('header__btn')) {
+    var id = e.target.getAttribute('href');
+    console.log(id);
+    document.querySelector(id).scrollIntoView({
+      behavior: 'smooth'
+    });
+  }
+}); ///////////////////////////////
 /// STICKY NAVIGATION: Intersection Observer API
 
 var header = document.querySelector('.header');
@@ -22783,17 +22797,17 @@ module.exports = {
 };
 },{"./eng-1-large.jpg":"resources/images/engagement/eng-1-large.jpg","./eng-1.jpg":"resources/images/engagement/eng-1.jpg","./eng-2.jpg":"resources/images/engagement/eng-2.jpg"}],"resources/images/family/fam-1.jpg":[function(require,module,exports) {
 module.exports = "/fam-1.e5cf2e6b.jpg";
-},{}],"resources/images/family/fam-3.jpg":[function(require,module,exports) {
-module.exports = "/fam-3.62fc2777.jpg";
 },{}],"resources/images/family/fam-3-large.jpg":[function(require,module,exports) {
 module.exports = "/fam-3-large.8a57bbff.jpg";
+},{}],"resources/images/family/fam-3.jpg":[function(require,module,exports) {
+module.exports = "/fam-3.62fc2777.jpg";
 },{}],"resources/images/family/*.jpg":[function(require,module,exports) {
 module.exports = {
   "fam-1": require("./fam-1.jpg"),
-  "fam-3": require("./fam-3.jpg"),
-  "fam-3-large": require("./fam-3-large.jpg")
+  "fam-3-large": require("./fam-3-large.jpg"),
+  "fam-3": require("./fam-3.jpg")
 };
-},{"./fam-1.jpg":"resources/images/family/fam-1.jpg","./fam-3.jpg":"resources/images/family/fam-3.jpg","./fam-3-large.jpg":"resources/images/family/fam-3-large.jpg"}],"resources/images/wedding/wed-1.jpg":[function(require,module,exports) {
+},{"./fam-1.jpg":"resources/images/family/fam-1.jpg","./fam-3-large.jpg":"resources/images/family/fam-3-large.jpg","./fam-3.jpg":"resources/images/family/fam-3.jpg"}],"resources/images/wedding/wed-1.jpg":[function(require,module,exports) {
 module.exports = "/wed-1.fdd0a09c.jpg";
 },{}],"resources/images/wedding/wed-2-b.jpg":[function(require,module,exports) {
 module.exports = "/wed-2-b.574610a4.jpg";
@@ -22927,7 +22941,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50955" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50070" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

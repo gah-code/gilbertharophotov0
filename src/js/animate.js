@@ -24,6 +24,22 @@ document
   });
 
 ///////////////////////////////
+/// HEADER BTN
+
+document
+  .querySelector('.header__box') // Parent Element
+  .addEventListener('click', function (e) {
+    e.preventDefault();
+    if (e.target.classList.contains('header__btn')) {
+      const id = e.target.getAttribute('href');
+      console.log(id);
+      document.querySelector(id).scrollIntoView({
+        behavior: 'smooth',
+      });
+    }
+  });
+
+///////////////////////////////
 /// STICKY NAVIGATION: Intersection Observer API
 
 const header = document.querySelector('.header');
