@@ -20,12 +20,11 @@
 
 //// SERVICES
 .section-two {
-  background-color: $color-grey-light-2;
+  background-color: rgba($color-grey-dark-3, 0.1);
   padding: 18rem 5rem;
-  margin: 0 auto;
 
-  @include respond(tab-port) {
-    padding: 15rem 3rem;
+  @include respond(phone) {
+    padding: 8rem 5rem;
   }
 }
 
@@ -38,13 +37,23 @@
   }
 }
 
+.section-prototype {
+  position: relative;
+  background-color: rgba($color-primary-dark, 0.1);
+  padding: 10rem 5rem;
+
+  // @include respond(phone) {
+  //   padding: 10rem 6rem;
+  // }
+}
+
 //// BOOKING
 .section-four {
   padding: 18rem 0;
   background-color: $color-grey-light-1;
 
   @include respond(tab-port) {
-    padding: 15rem 2rem;
+    padding: 6rem 2rem;
   }
 }
 
@@ -88,7 +97,7 @@
   margin-bottom: 10rem;
 
   @include respond(tab-port) {
-    margin-bottom: 12rem;
+    margin-bottom: 5rem;
     text-align: center;
   }
 }
