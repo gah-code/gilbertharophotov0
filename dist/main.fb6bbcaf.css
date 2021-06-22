@@ -266,7 +266,8 @@ body {
     .cta__wrapper {
       grid-column: 1 / span 1;
       grid-row: 1 / 2;
-      padding: 2rem; } }
+      padding: 2rem;
+      margin-bottom: 3rem; } }
 
 .cta__box-title {
   font: bold 7.5em/1 'Playfair Display', serif; }
@@ -292,10 +293,11 @@ body {
   grid-template-rows: 1fr 1fr 1fr auto; }
   .family-images .family-img-1 {
     z-index: 200;
-    outline: solid 3.3px white;
     width: 135%;
     grid-row: 2 / 5;
-    grid-column: 3 / 4; }
+    grid-column: 3 / 4;
+    background-color: rgba(255, 234, 167, 0.6);
+    box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.1); }
     @media only screen and (max-width: 37.5em) {
       .family-images .family-img-1 {
         width: 110%; } }
@@ -354,15 +356,16 @@ body {
       width: 100%;
       grid-row: 5 / 6;
       grid-column: 1 / 4;
-      outline: solid 3.3px white;
       z-index: 100;
-      border-radius: 5px; }
+      border-radius: 2px;
+      background-color: rgba(255, 234, 167, 0.6);
+      box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.1); }
       @media only screen and (max-width: 56.25em) {
         .wedding .wedding__pictures .wedding__img--1 {
           grid-row: 4 / 5; } }
       @media only screen and (max-width: 37.5em) {
         .wedding .wedding__pictures .wedding__img--1 {
-          margin-left: 2rem;
+          margin-left: 1rem;
           grid-row: 3 / 4;
           width: 98%; } }
     .wedding .wedding__pictures .wedding__img--2 {
@@ -370,14 +373,15 @@ body {
       grid-row: 3 / 4;
       grid-column: 4 / 7;
       margin-left: -2rem;
-      outline: solid 3.3px white;
-      z-index: 200;
-      border-radius: 5px; }
+      background-color: rgba(255, 234, 167, 0.6);
+      box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.1);
+      border-radius: 2px;
+      z-index: 200; }
       @media only screen and (max-width: 37.5em) {
         .wedding .wedding__pictures .wedding__img--2 {
-          margin-left: 1rem;
+          margin-left: 3rem;
           grid-row: 1 / 4;
-          width: 98%; } }
+          width: 100%; } }
   .wedding__content {
     grid-row: 1 / 2;
     display: flex;
@@ -393,6 +397,7 @@ body {
         align-items: flex-end;
         justify-content: start; } }
     .wedding__content h2 {
+      font-family: 'Goudy Bookletter 1911', serif;
       padding: 2.5rem 0;
       letter-spacing: 2px;
       font-weight: 300;
@@ -401,6 +406,7 @@ body {
         .wedding__content h2 {
           padding: 1rem 0; } }
     .wedding__content h3 {
+      font-family: 'Goudy Bookletter 1911', serif;
       position: absolute;
       left: 10%;
       top: 22%;
@@ -417,9 +423,10 @@ body {
           left: 12%; } }
       @media only screen and (max-width: 37.5em) {
         .wedding__content h3 {
+          font-size: 4.5rem;
           width: 60%;
           white-space: normal;
-          top: -310%;
+          top: -280%;
           left: -2%;
           padding-bottom: 1rem;
           line-height: 1.65; } }
@@ -427,7 +434,7 @@ body {
         .wedding__content h3 {
           width: 60%;
           white-space: normal;
-          top: -245%;
+          top: -235%;
           left: -8%;
           padding-bottom: 1rem;
           line-height: 1.65; } }
@@ -766,7 +773,7 @@ body {
     background-color: rgba(255, 255, 255, 0.9); }
 
 .section-introduction {
-  background-color: #eee;
+  background-color: rgba(187, 83, 235, 0.055);
   padding: 20rem 0rem; }
   @media only screen and (max-width: 56.25em) {
     .section-introduction {
@@ -781,7 +788,9 @@ body {
       padding: 10rem 3rem; } }
 
 .section-two {
-  background-color: rgba(51, 51, 51, 0.1);
+  background-image: linear-gradient(to right bottom, rgba(231, 231, 231, 0.8), rgba(231, 231, 231, 0.7)), url(/banner-3.76fbdcae.jpg);
+  background-size: cover;
+  margin-top: -10rem;
   padding: 18rem 5rem; }
   @media only screen and (max-width: 37.5em) {
     .section-two {
@@ -815,7 +824,7 @@ body {
 
 .section__title {
   max-width: 80rem;
-  margin: 0 auto 8rem auto; }
+  margin: 0 auto 0 auto; }
   @media only screen and (max-width: 56.25em) {
     .section__title {
       text-align: center; } }
@@ -825,7 +834,7 @@ body {
   font-weight: 600;
   text-transform: uppercase;
   color: rgba(29, 97, 128, 0.5);
-  margin-bottom: 1rem; }
+  margin: 7rem 0 2rem 0; }
   @media only screen and (max-width: 56.25em) {
     .section__description {
       text-align: center; } }
@@ -834,10 +843,11 @@ body {
   font-size: 4rem;
   line-height: 1.3;
   font-weight: 500;
-  margin-bottom: 10rem; }
-  @media only screen and (max-width: 56.25em) {
+  margin: 2rem 0 9rem 0; }
+  @media only screen and (max-width: 37.5em) {
     .section__header {
-      margin-bottom: 5rem;
+      margin: 2.5rem 0 14rem 0;
+      font-size: 3.5rem;
       text-align: center; } }
 
 
