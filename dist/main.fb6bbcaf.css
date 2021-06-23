@@ -338,7 +338,7 @@ body {
   height: 70vh; }
   @media only screen and (max-width: 37.5em) {
     .wedding {
-      padding: 5rem 2rem;
+      padding: 5rem 0;
       height: 75vh; } }
   .wedding .wedding__pictures {
     grid-column: 2 / 3;
@@ -423,7 +423,7 @@ body {
           left: 12%; } }
       @media only screen and (max-width: 37.5em) {
         .wedding__content h3 {
-          font-size: 4.5rem;
+          font-size: 4rem;
           width: 60%;
           white-space: normal;
           top: -280%;

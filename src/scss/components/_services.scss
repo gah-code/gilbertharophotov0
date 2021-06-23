@@ -76,7 +76,7 @@
   height: 70vh;
 
   @include respond(phone) {
-    padding: 5rem 2rem;
+    padding: 5rem 0;
     height: 75vh;
   }
 
@@ -186,7 +186,7 @@
       }
 
       @include respond(phone) {
-        font-size: 4.5rem;
+        font-size: 4rem;
         width: 60%;
         white-space: normal;
         top: -280%;
