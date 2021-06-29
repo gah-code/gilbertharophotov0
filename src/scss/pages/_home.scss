@@ -1,5 +1,5 @@
 .section-introduction {
-  background-color: rgba(187, 83, 235, 0.055);
+  // background-color:
   padding: 20rem 0rem;
 
   @include respond(tab-port) {
@@ -10,11 +10,12 @@
 
 //// MIXTURE
 .section-one {
-  background-color: rgba($color-primary-dark, 0.1);
+  // background-color: $color-primary-light;
+  background-color: rgba($color-primary-light, 0.5);
   padding: 18rem 5rem;
 
   @include respond(tab-port) {
-    padding: 10rem 3rem;
+    padding: 12rem 3rem;
   }
 }
 
@@ -23,8 +24,8 @@
   // background-color: rgba(rgba(179, 67, 59, 0.719), 0.3);
   background-image: linear-gradient(
       to right bottom,
-      rgba($color-primary, 0.8),
-      rgba($color-primary, 0.7)
+      rgba($color-secondary-light, 0.7),
+      rgba($color-secondary-light, 0.6)
     ),
     url(../resources/images/banner/banner-3.jpg);
   background-size: cover;
@@ -49,7 +50,7 @@
 
 .section-prototype {
   position: relative;
-  background-color: rgba($color-primary-dark, 0.1);
+  background-color: rgba($color-secondary-light, 0.6);
   padding: 10rem 5rem;
 
   // @include respond(phone) {
@@ -63,7 +64,7 @@
   background-color: $color-grey-light-1;
 
   @include respond(tab-port) {
-    padding: 6rem 2rem;
+    padding: 10rem 2rem;
   }
 }
 

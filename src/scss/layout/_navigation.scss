@@ -41,6 +41,7 @@
     width: 58%;
     padding-bottom: 5rem;
     padding: 1.5rem 0 1rem 0;
+    float: left;
 
     @include respond(tab-port) {
       width: 50%;
@@ -48,8 +49,13 @@
     }
 
     @include respond(phone) {
-      width: 95%;
-      padding: 1rem 0 0 1rem;
+      width: 60%;
+      padding: 2rem 0 0 1rem;
+    }
+
+    @include respond(small-phone) {
+      width: 85%;
+      padding: 1.5rem 0 0 0;
     }
   }
 
@@ -103,6 +109,11 @@
 
     @include respond(phone) {
       padding: 0.8rem 1.1rem;
+    }
+
+    @include respond(small-phone) {
+      padding: 1rem 0.7rem;
+      font-size: 1.4rem;
     }
   }
 
