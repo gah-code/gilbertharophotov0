@@ -1,6 +1,7 @@
 .section-introduction {
   // background-color:
   padding: 20rem 0rem;
+  background-color: #fff;
 
   @include respond(tab-port) {
     margin-top: -10rem;

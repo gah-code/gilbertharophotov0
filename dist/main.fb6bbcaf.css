@@ -751,8 +751,8 @@ body {
         padding: 2rem 0 0.8rem 0; } }
     @media only screen and (max-width: 37.5em) {
       .navigation__icon img {
-        width: 60%;
-        padding: 2rem 0 0 1rem; } }
+        width: 70%;
+        padding: 1rem 0 1rem 1rem; } }
     @media only screen and (max-width: 30.5em) {
       .navigation__icon img {
         width: 85%;
@@ -764,7 +764,7 @@ body {
     padding: 5rem 2rem 5rem 0; }
     @media only screen and (max-width: 37.5em) {
       .navigation__list {
-        padding: 0 3rem 0.5rem 0; } }
+        padding: 0 2.5rem 0.4rem 0; } }
   .navigation__item {
     display: flex;
     margin-left: 5rem; }
@@ -773,7 +773,7 @@ body {
         margin-left: 3rem; } }
     @media only screen and (max-width: 37.5em) {
       .navigation__item {
-        margin-left: 2rem; } }
+        margin-left: 1.2rem; } }
   .navigation__link {
     color: #fff;
     text-decoration: none;
@@ -793,7 +793,8 @@ body {
         opacity: 0; }
     @media only screen and (max-width: 37.5em) {
       .navigation__link {
-        padding: 0.8rem 1.1rem; } }
+        letter-spacing: 1.1px;
+        padding: 0.8rem 1.4rem; } }
     @media only screen and (max-width: 30.5em) {
       .navigation__link {
         padding: 1rem 0.7rem;
@@ -804,7 +805,8 @@ body {
     background-color: rgba(255, 255, 255, 0.9); }
 
 .section-introduction {
-  padding: 20rem 0rem; }
+  padding: 20rem 0rem;
+  background-color: #fff; }
   @media only screen and (max-width: 56.25em) {
     .section-introduction {
       margin-top: -10rem;
