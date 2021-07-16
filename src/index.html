@@ -4,8 +4,32 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      @font-face {
+        font-family: "Lumiera";
+        src: url(./resources/fonts/Lumiera.woff);
+      }
+
+      @font-face {
+        font-family: "Lumiera-Handwritng";
+        src: url(./resources/fonts/LumieraHandwriting.woff);
+      }
+
+      @font-face {
+        font-family: "Warm Memories Bold";
+        src: url(./resources/fonts/WarmMemoriesBold.ttf);
+      }
+
+      @font-face {
+        font-family: "Warm Memories Regular";
+        src: url(./resources/fonts/WarmMemoriesRegular.ttf);
+      }
+    </style>
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://use.typekit.net/juf0xjb.css" />
+
     <link
       href="https://fonts.googleapis.com/css2?family=Goudy+Bookletter+1911&display=swap"
       rel="stylesheet"
@@ -31,8 +55,8 @@
     <header class="header" id="section--1">
       <div class="navigation">
         <nav class="navigation__bar">
-          <div class="navigation__icon">
-            <img src="./resources/images/branding/logo-one.png" alt="" />
+          <div class="navigation__logo">
+            <img src="./resources/images/branding/logo-two.png" alt="" />
           </div>
           <!-- <input type="checkbox" name="" id="click" />
           <label for="click" class="menu-btn"> -->
@@ -56,21 +80,30 @@
         </nav>
       </div>
 
-      <div class="header__box u-mt-m">
+      <div class="header__box">
         <h1 class="heading-primary-main">
-          Gilbert Haro
+          Moments worth caputuring
+          <!-- <span class="highlight"></span> -->
+          <!-- Gilbert Haro
           <br />
           <span class="highlight">Photo</span>
-          <span>graphy</span>
+          <span>graphy</span> -->
         </h1>
 
         <p class="heading__box-text">
           Providing a smooth experience and caputuring memories one click at a
           time!
         </p>
-        <button class="btn btn-black header__btn" href="#section--0">
-          Learn more &DownArrow;
-        </button>
+        <!-- btn btn-black -->
+        <div class="header__btns">
+          <a class="header__btn header__btn-one" href="#section--0">
+            Learn more &DownArrow;
+          </a>
+          <a class="header__btn header__btn-two" href="#section--2"
+            >Services
+          </a>
+        </div>
+
         <!-- <img
           src="./resources/images/engagement/eng-2-b.jpg"
           class="header__img"
@@ -79,6 +112,74 @@
       </div>
     </header>
     <main>
+      <section class="section-one section" id="section--2">
+        <div class="hero-container">
+          <div class="hero__content">
+            <div class="hero__content-right">
+              <img
+                class="hero__content-img-right"
+                src="./resources/images/wedding/wed-4.jpg"
+                alt=""
+              />
+              <img
+                class="hero__content-logo"
+                src="./resources/icons/Wedding-Expanded-Outline-Individual_Fireworks.svg"
+                alt=""
+              />
+            </div>
+
+            <div class="hero__content-left">
+              <h2 class="hero__content-header">
+                Wedding & Family Photographer
+              </h2>
+              <h3>based in the bay area, serving all california</h3>
+              <h4>A laugh today a memory tomorrow</h4>
+
+              <img
+                class="hero__content-img-one"
+                src="./resources/images/branding/hero-img-one.jpg"
+                alt=""
+              />
+              <img
+                class="hero__content-img-two"
+                src="./resources/images/branding/hero-img-two.jpg"
+                alt=""
+              />
+              <img
+                class="hero__content-img-three"
+                src="./resources/images/banner/banner-1.jpg"
+                alt=""
+              />
+            </div>
+
+            <!-- <div class="hero__content-middle">
+              <h2 class="hero__content-header">
+                Wedding & Family Photographer
+              </h2>
+              <h3>based in the bay area, serving all california</h3>
+              <h4>A laugh today a memory tomorrow</h4>
+            </div>
+
+            <div class="hero__content-left">
+              <img
+                class="hero__content-img-one"
+                src="./resources/images/branding/hero-img-one.jpg"
+                alt=""
+              />
+              <img
+                class="hero__content-img-two"
+                src="./resources/images/branding/hero-img-two.jpg"
+                alt=""
+              />
+              <img
+                class="hero__content-img-three"
+                src="./resources/images/banner/banner-1.jpg"
+                alt=""
+              />
+            </div> -->
+          </div>
+        </div>
+      </section>
       <section class="section-introduction" id="section--0">
         <div class="u-center-text">
           <div class="row">
@@ -99,69 +200,14 @@
         </div>
       </section>
 
-      <section class="section-one section">
-        <div class="mixture">
-          <div class="container">
-            <img
-              loading="lazy"
-              srcset="
-                ./resources/images/engagement/eng-1.jpg        300w,
-                ./resources/images/engagement/eng-1-large.jpg 1000w
-              "
-              sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
-              alt="Photo 1"
-              class="container__photo container__photo-p1"
-              src="./resources/images/engagement/eng-1-large.jpg"
-            />
-
-            <img
-              loading="lazy"
-              srcset="
-                ./resources/images/family/fam-3.jpg        300w,
-                ./resources/images/family/fam-3-large.jpg 1000w
-              "
-              sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
-              alt="Photo 2"
-              class="container__photo container__photo-p2"
-              src="./resources/images/family/fam-3-large.jpg"
-            />
-
-            <img
-              loading="lazy"
-              srcset="
-                ./resources/images/wedding/wed-2.jpg        300w,
-                ./resources/images/wedding/wed-2-large.jpg 1000w
-              "
-              sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
-              alt="Photo 3"
-              class="container__photo container__photo-p3"
-              src="./resources/images/wedding/wed-2-large.jpg"
-            />
-          </div>
-
-          <div class="cta__wrapper">
-            <div class="cta__box">
-              <h1 class="cta__box-title">
-                A laugh today &mdash; a memory tomorrow
-              </h1>
-              <p class="cta__box-text">
-                Capture your unique stories and experiences in time through
-                visual storytelling for your present loved ones and future
-                generations to come.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section section-two" id="section--2">
+      <section class="section section-two">
         <div class="row">
-          <div class="section__block">
+          <!-- <div class="section__block">
             <div class="section__title">
               <h2 class="section__description">Services</h2>
               <h3 class="section__header">Moments &mdash; worth caputuring.</h3>
             </div>
-          </div>
+          </div> -->
         </div>
         <!-- <div class="section__title">
           <h2 class="section__description">Services</h2>
@@ -180,7 +226,7 @@
               <img
                 loading="lazy"
                 class="wedding__img--2"
-                src="./resources/images/wedding/wed-4.jpg"
+                src="./resources/images/wedding/wed-5.jpg"
                 alt=""
               />
             </div>
@@ -266,6 +312,81 @@
                 Summer Sessions now booking!! Contactless, efficient, and
                 photographer recommned locations.
               </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-packages">
+        <div class="row">
+          <div class="col-1-of-3">
+            <div class="family-box-a">
+              <h3>Family Sessions</h3>
+              <p class="paragraph">
+                Summer Sessions now booking!! Contactless, efficient, and
+                photographer recommned locations.
+              </p>
+            </div>
+            <div class="family-box-b">
+              <h3>Locations</h3>
+              <p class="paragraph">
+                Go calm and simple or turn your family session into an
+                adventure!
+              </p>
+            </div>
+
+            <!-- <div>
+              <a href="" class="btn">Book Today</a>
+            </div> -->
+          </div>
+
+          <div class="col-1-of-3">
+            <div class="plan-box plan-box-one">
+              <div>
+                <h3>Package One</h3>
+                <p class="plan-price">$180<span>/price</span></p>
+                <p class="plan-price-detail">
+                  Palo Alto - Redwood Grove Nature Preserve
+                </p>
+              </div>
+              <div>
+                <div>
+                  <ul>
+                    <li><i class="far fa-clock checkmark"></i> 45 Minutes</li>
+                    <li><i class="fas fa-check checkmark"></i> One location</li>
+                    <li><i class="far fa-images checkmark"></i> 18 Images</li>
+                  </ul>
+                </div>
+
+                <div>
+                  <a href="#section--4" class="plan-price-btn">Book Today</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-1-of-3">
+            <div class="plan-box plan-box-two">
+              <div>
+                <h3>Package Two</h3>
+                <p class="plan-price">$250<span>/price</span></p>
+                <p class="plan-price-detail">Santa Cruz - Davenport</p>
+              </div>
+              <div>
+                <div>
+                  <ul>
+                    <li><i class="far fa-clock checkmark"></i> 1.5 hours</li>
+                    <li>
+                      <i class="fas fa-check checkmark"></i> Two locations
+                    </li>
+                    <li><i class="far fa-images checkmark"></i> 25 Images</li>
+                  </ul>
+                </div>
+
+                <div>
+                  <a href="#section--4" class="plan-price-btn">Book Today</a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -366,6 +487,13 @@
                   <option value="Family">Family</option>
                   <option value="Engagement">Engagement</option>
                   <option value="other">Other</option>
+                </select>
+              </p>
+              <label class="form__label">Package</label>
+              <p class="form__group">
+                <select name="package" id="package-type" class="form__input">
+                  <option value="Package-One">Package One</option>
+                  <option value="Package-Two">Package Two</option>
                 </select>
               </p>
               <p class="form__group">

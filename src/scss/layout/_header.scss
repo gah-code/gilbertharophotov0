@@ -17,7 +17,7 @@
   position: relative;
   background-repeat: no-repeat;
   width: 100%;
-  height: 85vh;
+  height: 110vh;
 
   @include respond(phone) {
     background-image: linear-gradient(
@@ -32,11 +32,11 @@
     background-position: top;
     position: relative;
     background-repeat: no-repeat;
-    height: 80vh;
-    margin-bottom: 5rem;
+    height: 85vh;
   }
 
   &__box {
+    // background-color: khaki;
     margin-top: 15rem;
     flex: 1;
     max-width: $grid-width;
@@ -47,6 +47,7 @@
     justify-content: center;
     align-items: start;
     justify-items: start;
+    padding: 3rem 0;
 
     @include respond(phone) {
       margin: 6rem 0;
@@ -59,7 +60,9 @@
   }
 
   .heading__box-text {
-    font-size: 2.5rem;
+    font-size: 2rem;
+    letter-spacing: 1px;
+    font-weight: 300;
     padding-right: 1.5rem;
     grid-column: 1 / 2;
 
@@ -75,25 +78,71 @@
     }
   }
 
-  .header__btn {
+  .header__btns {
+    margin-top: 1.5rem;
     grid-column: 1 / 2;
+    grid-row: 4 / 4;
     transition: all 0.5s ease;
+    align-items: end;
 
-    @include respond(phone) {
-      margin: 1.5rem 0;
-      grid-column: 1 / 2;
-      grid-row: 4 / 5;
+    // @include respond(phone) {
+    //   margin: 1.5rem 0;
+    //   grid-column: 1 / 2;
+    //   grid-row: 4 / 5;
+    // }
+  }
+
+  .header__btn {
+    &,
+    &:link,
+    &:visited {
+      text-transform: uppercase;
+      text-decoration: none;
+      display: inline-block;
+      transition: all 0.2s;
+      position: relative;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: $default-font-size;
+      padding: 1.2rem 2.2rem;
     }
 
     &:hover {
       transform: translateY(-3px);
-      box-shadow: 0 1rem 2rem rgba($color-primary-light, 0.6);
-      background-color: rgba($color-primary-dark, 0.8);
+      box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
 
       &::after {
         transform: scaleX(1.4) scaleY(1.6);
-
         opacity: 0;
+      }
+    }
+
+    &:active,
+    &:focus {
+      outline: none;
+      transform: translateY(-1px);
+      box-shadow: 0 0.5rem 1rem rgba($color-black, 0.8);
+    }
+
+    &-one {
+      justify-self: center;
+      margin-right: 5rem;
+      color: $color-white;
+      background-color: $color-grey-dark-3;
+
+      &::after {
+        background-color: $color-white;
+      }
+    }
+
+    &-two {
+      border: solid 1.2px $color-secondary;
+      justify-self: start;
+      color: $color-secondary;
+      background-color: $color-grey-light-1;
+
+      &::after {
+        background-color: $color-secondary;
       }
     }
   }
@@ -119,11 +168,12 @@
 .highlight {
   position: relative;
   z-index: 10;
+  color: #fff;
 }
 
 .highlight::after {
   display: block;
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: 0;
@@ -134,7 +184,7 @@
   transform: scale(1.07, 1.05);
   // skewX(-15deg);
   // background-image: var(--gradient-primary);
-  background-color: rgba($color-grey-dark-2, 0.2);
+  background-color: rgba($color-secondary, 0.8);
 }
 
 // .header {

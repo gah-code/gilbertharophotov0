@@ -1,3 +1,19 @@
+//// MIXTURE
+.section-one {
+  // background-color: $color-primary-light;
+  // background-color: rgba($color-primary-light, 0.2);
+  background-color: rgb(236, 236, 236);
+  padding: 18rem 0;
+
+  @include respond(tab-port) {
+    padding: 15rem 0rem;
+  }
+
+  @include respond(phone) {
+    padding: 10rem 0.2rem;
+  }
+}
+
 .section-introduction {
   // background-color:
   padding: 20rem 0rem;
@@ -9,31 +25,20 @@
   }
 }
 
-//// MIXTURE
-.section-one {
-  // background-color: $color-primary-light;
-  background-color: rgba($color-primary-light, 0.5);
-  padding: 18rem 5rem;
-
-  @include respond(tab-port) {
-    padding: 12rem 3rem;
-  }
-}
-
 //// SERVICES
 .section-two {
-  // background-color: rgba(rgba(179, 67, 59, 0.719), 0.3);
-  background-image: linear-gradient(
-      to right bottom,
-      rgba($color-secondary-light, 0.7),
-      rgba($color-secondary-light, 0.6)
-    ),
-    url(../resources/images/banner/banner-3.jpg);
-  background-size: cover;
-  // transform: skewY(-7deg);
-  margin-top: -10rem;
+  // background-color: rgba(rgba(179, 67, 59, 0.719), 0.2);
+  // background-image: linear-gradient(
+  //     to right bottom,
+  //     rgba($color-secondary, 0.7),
+  //     rgba($color-secondary, 0.6)
+  //   ),
+  //   url(../resources/images/banner/banner-3.jpg);
+  // background-size: cover;
+  // // transform: skewY(-7deg);
+  // margin-top: -10rem;
 
-  padding: 18rem 5rem;
+  padding: 10rem 5rem;
 
   @include respond(phone) {
     padding: 8rem 5rem;
@@ -47,6 +52,11 @@
   @include respond(tab-port) {
     padding: 10rem 5rem;
   }
+}
+
+.section-packages {
+  padding: 15rem 10rem;
+  // background-color: orange;
 }
 
 .section-prototype {

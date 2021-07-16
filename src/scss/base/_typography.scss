@@ -1,5 +1,5 @@
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 300;
   line-height: 1.7;
   color: #444;
@@ -9,11 +9,14 @@ body {
   text-transform: uppercase;
 
   &-main {
+    font: 7em/1 "Lumiera", serif;
+    font-weight: 400;
+    font-style: normal;
     display: block;
-    font-size: 6.2rem;
-    font-weight: 600;
+    // font-size: 6.2rem;
+    // font-weight: 600;
     letter-spacing: 0.5rem;
-    line-height: 1.35;
+    line-height: 1.2;
 
     @include respond(phone) {
       font-size: 6rem;

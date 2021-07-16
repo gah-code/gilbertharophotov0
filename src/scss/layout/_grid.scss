@@ -7,18 +7,18 @@
     margin-bottom: $gutter-vertical;
 
     @include respond(tab-port) {
-      margin-bottom: $gutter-vertical;
+      margin-bottom: $gutter-vertical-small;
     }
   }
 
   @include respond(tab-port) {
-    max-width: 75rem;
+    max-width: 50rem;
     padding: 0 2rem;
   }
 
   @include clearfix;
 
-  [class^='col-'] {
+  [class^="col-"] {
     float: left;
 
     &:not(:last-child) {
@@ -26,11 +26,11 @@
 
       @include respond(tab-port) {
         margin-right: 0;
-        margin-bottom: $gutter-vertical;
+        margin-bottom: $gutter-vertical-small;
       }
     }
 
-    @include respond(phone) {
+    @include respond(tab-port) {
       width: 100% !important;
     }
   }

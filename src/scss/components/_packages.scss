@@ -1,0 +1,146 @@
+/// FAMILY PACKAGES
+.family-box-a {
+  margin-right: 1rem;
+  padding: 2rem;
+  background-color: rgba($color-secondary-light, 0.6);
+
+  h3 {
+    font-weight: 300;
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1.4rem;
+  }
+}
+
+.family-box-b {
+  margin-right: 1rem;
+  margin-top: 4rem;
+  padding: 1.5rem;
+  border-left: solid 3px $color-secondary;
+
+  h3 {
+    font-weight: 300;
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1.4rem;
+  }
+}
+
+.plan-box-one {
+  background-image: linear-gradient(
+      to right bottom,
+      rgba($color-secondary-light, 0.7),
+      rgba($color-secondary-light, 0.7)
+    ),
+    url(../resources/images/engagement/eng-1.jpg);
+  background-size: contain;
+}
+
+.plan-box-two {
+  background-image: linear-gradient(
+      to right bottom,
+      rgba($color-secondary-light, 0.7),
+      rgba($color-secondary-light, 0.7)
+    ),
+    url(../resources/images/banner/banner-3.jpg);
+  background-size: contain;
+}
+
+.plan-box {
+  margin-top: 0.5rem;
+  // background-color: rgba($color-secondary-light, 0.6);
+  border-radius: 5px;
+  width: 90%;
+  box-shadow: 0 2px 2px #a3a3a3;
+  transition: all 0.3s;
+
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 1rem 2rem rgba($color-primary-dark, 0.6);
+    background-color: rgba($color-primary, 0.2);
+    background-image: none;
+
+    &::after {
+      transform: scaleX(1.4) scaleY(1.6);
+      opacity: 0;
+    }
+  }
+
+  h3 {
+    font-size: 2rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 300;
+    color: rgba($color-secondary, 0.9);
+  }
+}
+
+.plan-box div {
+  padding: 2.5rem 2rem;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.plan-box div:first-child {
+  margin-left: 0.2rem;
+}
+
+.plan-box div:last-child {
+  background-color: rgba($color-grey-light-1, 0.9);
+  text-align: center;
+  border: 0;
+}
+
+.plan-price {
+  font-size: 4rem;
+  margin-bottom: 0.2rem;
+  font-weight: 100;
+  color: $color-grey-dark-3;
+  transition: all 0.1s;
+}
+
+.plan-price span {
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+.plan-price-detail {
+  font-size: 1rem;
+  color: $color-grey-dark-3;
+}
+
+.plan-box ul {
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  list-style: none;
+}
+
+.plan-box ul li {
+  padding: 1rem;
+}
+
+.plan-price-btn {
+  &,
+  &:link,
+  &:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1rem 1rem;
+    display: inline-block;
+    border-radius: 0.5rem;
+    transition: all 0.2s;
+    position: relative;
+    font-size: $default-font-size;
+    border: none;
+    cursor: pointer;
+    color: $color-black;
+  }
+
+  &:hover {
+    box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
+    background-color: rgba($color-primary-dark, 0.3);
+  }
+}
