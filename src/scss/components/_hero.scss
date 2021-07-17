@@ -97,7 +97,6 @@
 .hero__content-left {
   grid-column: 2 / 3;
   overflow: hidden;
-
   display: grid;
 
   grid-template-rows: repeat(6, 80px);
@@ -106,6 +105,7 @@
   position: relative;
   justify-items: center;
   align-items: center;
+  row-gap: 0.5rem;
 
   @include respond(tab-port) {
     grid-template-rows: 80px 80px 85px 45px 40px 130px;
@@ -119,17 +119,14 @@
     display: grid;
     grid-row: 3 / 4;
     grid-column: 1 / 4;
-
-    font-family: "Lumiera";
-    font-weight: 300;
+    text-transform: uppercase;
+    // font-family: "Lumiera";
     font-style: normal;
-    // position: absolute;
-    // color: rgba($color-secondary-dark, 0.8);
-    color: rgba($color-primary-dark, 0.9);
+    color: rgba($color-primary-dark, 0.8);
     place-self: center;
     // grid-row: 1 / 2;
     font-size: 4.5rem;
-    // left: -3px;
+    margin-bottom: 5rem;
     width: 100%;
     z-index: 200;
     line-height: 1.2;
@@ -138,13 +135,13 @@
     @include respond(tab-port) {
       font-size: 4rem;
       grid-column: 1 / 5;
-      margin-bottom: 2rem;
+      margin-bottom: 4rem;
     }
 
     @include respond(phone) {
       grid-column: 1 / 7;
       grid-row: 4 / 4;
-      margin-bottom: 3.8rem;
+      margin-bottom: 5.5rem;
       font-size: 3.5rem;
     }
   }
@@ -154,26 +151,21 @@
     grid-row: 4 / 5;
     grid-column: 1 / 4;
     padding: 0 1rem;
-
-    font-weight: 400;
-    font-style: normal;
-    // position: absolute;
-    // color: rgba($color-secondary-dark, 0.8);
-    color: rgba($color-primary-dark, 0.9);
-    font-size: 1.8rem;
+    place-self: start;
+    margin-top: 3rem;
 
     @include respond(tab-land) {
-      margin-top: 5rem;
+      margin-top: 1.5rem;
     }
 
     @include respond(tab-port) {
-      grid-column: 1 / 5;
+      margin-top: 0.8rem;
+      grid-column: 1 / 6;
     }
 
     @include respond(phone) {
-      margin: 0;
+      margin-top: 0.5rem;
       place-self: start;
-      font-size: 1.3rem;
       grid-row: 5 / 5;
       grid-column: 1 / 6;
     }
@@ -183,14 +175,11 @@
     display: grid;
     grid-row: 5 / 6;
     grid-column: 1 / 5;
-    // color: rgba(20, 79, 99, 1);
     padding: 0 1rem;
     color: rgba($color-primary, 0.9);
-
+    line-height: 1;
     width: 100%;
-    // font-family: adobe-handwriting-ernie, sans-serif;
     font-family: "Warm Memories Regular";
-    font-style: normal;
     font-size: 5rem;
 
     @include respond(tab-land) {
@@ -202,12 +191,14 @@
       font-size: 4rem;
       grid-column: 1 / 6;
       place-self: start;
+      margin-top: 2.5rem;
     }
 
     @include respond(phone) {
-      margin: 0;
+      font-size: 3.5rem;
+      margin-top: 3.5rem;
       grid-row: 6 / 6;
-      font-size: 2.1rem;
+      width: 130%;
     }
   }
 }

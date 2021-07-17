@@ -7,37 +7,20 @@ body {
 
 .heading-primary {
   text-transform: uppercase;
+  font-family: "Lumiera", serif;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0.5rem;
+  line-height: 1.5;
+  font-size: 6.5rem;
 
-  &-main {
-    font: 7em/1 "Lumiera", serif;
-    font-weight: 400;
-    font-style: normal;
-    display: block;
-    // font-size: 6.2rem;
-    // font-weight: 600;
-    letter-spacing: 0.5rem;
-    line-height: 1.2;
-
-    @include respond(phone) {
-      font-size: 6rem;
-      text-align: center;
-    }
-
-    @include respond(small-phone) {
-      font-size: 5rem;
-    }
+  @include respond(phone) {
+    font-size: 5rem;
+    text-align: center;
   }
 
-  &-sub {
-    font-size: 4rem;
-    font-weight: 600;
-    letter-spacing: 1.05rem;
-    color: $color-grey-dark-3;
-
-    @include respond(phone) {
-      padding-left: 1.5em;
-      letter-spacing: 1.2rem;
-    }
+  @include respond(small-phone) {
+    font-size: 4.5rem;
   }
 }
 
@@ -61,9 +44,26 @@ body {
 
 .paragraph {
   font-size: 1.8rem;
-  line-height: 1.95;
+  line-height: 1.9;
+  letter-spacing: 1px;
+  font-weight: 400;
 
   &:not(:last-child) {
     margin-bottom: 3rem;
+  }
+
+  @include respond(phone) {
+    font-size: 1.6rem;
+  }
+}
+
+.paragraph-primary {
+  font-size: 2rem;
+  line-height: 1.31;
+  font-weight: 400;
+
+  @include respond(phone) {
+    font-size: 1.8rem;
+    text-align: center;
   }
 }

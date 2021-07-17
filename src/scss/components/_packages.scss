@@ -37,7 +37,8 @@
       rgba($color-secondary-light, 0.7)
     ),
     url(../resources/images/engagement/eng-1.jpg);
-  background-size: contain;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .plan-box-two {
@@ -47,7 +48,8 @@
       rgba($color-secondary-light, 0.7)
     ),
     url(../resources/images/banner/banner-3.jpg);
-  background-size: contain;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .plan-box {
@@ -89,7 +91,7 @@
 }
 
 .plan-box div:last-child {
-  background-color: rgba($color-grey-light-1, 0.9);
+  background-color: rgba($color-grey-light-1, 10);
   text-align: center;
   border: 0;
 }
