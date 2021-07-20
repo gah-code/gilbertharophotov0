@@ -79,6 +79,11 @@
     font-weight: 300;
     color: rgba($color-secondary, 0.9);
   }
+
+  @include respond(phone) {
+    margin-top: 5rem;
+    width: 100%;
+  }
 }
 
 .plan-box div {
