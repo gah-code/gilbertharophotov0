@@ -44,6 +44,14 @@ body {
   line-height: 1.7;
   color: #444; }
 
+.style-text {
+  font-family: Warm Memories Regular;
+  font-size: 6.5rem;
+  letter-spacing: 1.3px;
+  text-transform: none;
+  line-height: 1.35;
+  color: #73a2bf; }
+
 .heading-primary {
   text-transform: uppercase;
   font-family: "Lumiera", serif;
@@ -509,15 +517,33 @@ body {
       padding: 2rem;
       margin-bottom: 3rem; } }
 
-.cta__box-title {
-  font: bold 7.5em/1 'Playfair Display', serif; }
-  @media only screen and (max-width: 37.5em) {
-    .cta__box-title {
-      font-size: 6.5em; } }
+@media only screen and (max-width: 37.5em) {
+  .cta__box-title {
+    font-size: 6.5em; } }
 
 .cta__box-text {
   font-size: 1.9rem;
   margin-top: 4rem; }
+
+.mixture-logo {
+  z-index: 100;
+  top: 80px;
+  left: -320px;
+  position: absolute;
+  width: 40%;
+  overflow: hidden;
+  transition: all 0.3s ease-in; }
+  @media only screen and (max-width: 75em) {
+    .mixture-logo {
+      top: 110px;
+      left: -170px; } }
+  @media only screen and (max-width: 37.5em) {
+    .mixture-logo {
+      width: 50%;
+      top: -109px;
+      left: 238px; } }
+  .mixture-logo:hover {
+    transform: scale(1.2); }
 
 .family-box-a {
   margin-right: 1rem;
@@ -628,57 +654,8 @@ body {
   background-color: rgba(16, 29, 44, 0.3); }
 
 .services {
-  padding: 15rem 0; }
-  @media only screen and (max-width: 37.5em) {
-    .services {
-      padding: 10rem 0; } }
-
-.family-images {
-  display: grid;
-  align-content: center;
-  justify-items: center;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 1fr 1fr 1fr auto; }
-  .family-images .family-img-1 {
-    z-index: 200;
-    width: 135%;
-    grid-row: 2 / 5;
-    grid-column: 3 / 4;
-    background-color: rgba(112, 94, 68, 0.5);
-    box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.1); }
-    @media only screen and (max-width: 37.5em) {
-      .family-images .family-img-1 {
-        width: 110%; } }
-  .family-images .family-img-2 {
-    z-index: 100;
-    width: 120%;
-    grid-column: 1 / 3;
-    grid-row: 1 / 4; }
-    @media only screen and (max-width: 37.5em) {
-      .family-images .family-img-2 {
-        width: 100%; } }
-
-.family-text {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  padding: 6rem 4rem; }
-  @media only screen and (max-width: 37.5em) {
-    .family-text {
-      text-align: left;
-      padding: 1rem; } }
-  .family-text h3 {
-    font-family: "Lumiera";
-    text-transform: uppercase;
-    font-size: 4rem;
-    margin-bottom: 1rem;
-    line-height: 1.3;
-    font-weight: 500;
-    letter-spacing: 0.2rem; }
-  .family-text p {
-    font-size: 1.7rem;
-    line-height: 1.95; }
+  background-color: rgba(255, 255, 255, 0.5);
+  margin: 0 auto; }
 
 .wedding {
   position: relative;
@@ -688,7 +665,7 @@ body {
   height: 70vh; }
   @media only screen and (max-width: 37.5em) {
     .wedding {
-      padding: 5rem 0;
+      padding: 10rem 0;
       height: 75vh; } }
   .wedding .wedding__pictures {
     grid-column: 2 / 3;
@@ -709,7 +686,7 @@ body {
       z-index: 100;
       border-radius: 2px;
       background-color: rgba(112, 94, 68, 0.6);
-      box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.1); }
+      box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.2); }
       @media only screen and (max-width: 56.25em) {
         .wedding .wedding__pictures .wedding__img--1 {
           grid-row: 4 / 5; } }
@@ -724,14 +701,14 @@ body {
       grid-column: 4 / 7;
       margin-left: -2rem;
       background-color: rgba(112, 94, 68, 0.6);
-      box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.1);
+      box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.3);
       border-radius: 2px;
       z-index: 200; }
       @media only screen and (max-width: 37.5em) {
         .wedding .wedding__pictures .wedding__img--2 {
           margin-left: 3rem;
           grid-row: 1 / 4;
-          width: 100%; } }
+          width: 102%; } }
   .wedding__content {
     grid-row: 1 / 2;
     display: flex;
@@ -747,10 +724,13 @@ body {
         align-items: flex-end;
         justify-content: start; } }
     .wedding__content h2 {
-      text-transform: uppercase;
       padding: 2.5rem 0;
-      letter-spacing: 1px;
-      font-size: 1.8rem; }
+      font-family: Warm Memories Regular;
+      letter-spacing: 1.3px;
+      text-transform: none;
+      line-height: 1.35;
+      color: #73a2bf;
+      font-size: 4rem; }
       @media only screen and (max-width: 37.5em) {
         .wedding__content h2 {
           padding: 1rem 0; } }
@@ -758,6 +738,7 @@ body {
       font-family: "Lumiera";
       font-weight: 400;
       position: absolute;
+      text-transform: uppercase;
       left: 10%;
       top: 22%;
       letter-spacing: 0.1rem;
@@ -779,7 +760,6 @@ body {
           white-space: normal;
           top: -250%;
           left: -2%;
-          padding-bottom: 1rem;
           line-height: 1.35; } }
       @media only screen and (max-width: 30.5em) {
         .wedding__content h3 {
@@ -790,12 +770,12 @@ body {
           padding-bottom: 1rem;
           line-height: 1.65; } }
     .wedding__content p {
-      padding-top: 12rem;
+      padding-top: 10rem;
       font-size: 1.7rem;
       line-height: 1.95; }
       @media only screen and (max-width: 56.25em) {
         .wedding__content p {
-          padding-top: 11rem; } }
+          padding-top: 8.5rem; } }
       @media only screen and (max-width: 37.5em) {
         .wedding__content p {
           text-align: right;
@@ -1154,16 +1134,6 @@ body {
     position: fixed;
     background-color: rgba(255, 255, 255, 0.9); }
 
-.section-one {
-  background-color: #ececec;
-  padding: 18rem 0; }
-  @media only screen and (max-width: 56.25em) {
-    .section-one {
-      padding: 15rem 0rem; } }
-  @media only screen and (max-width: 37.5em) {
-    .section-one {
-      padding: 10rem 0.2rem; } }
-
 .section-introduction {
   padding: 20rem 0rem;
   background-color: #fff; }
@@ -1172,31 +1142,93 @@ body {
       margin-top: -10rem;
       padding: 20rem 1rem; } }
 
+.section-one {
+  padding: 18rem 5rem; }
+  @media only screen and (max-width: 56.25em) {
+    .section-one {
+      padding: 12rem 3rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .section-one {
+      padding: 15rem 2rem; } }
+
 .section-two {
-  padding: 10rem 5rem; }
+  padding: 10rem 5rem;
+  background-color: rgba(255, 234, 167, 0.5); }
   @media only screen and (max-width: 37.5em) {
     .section-two {
-      padding: 8rem 5rem; } }
+      padding: 15rem 5rem; } }
 
 .section-three {
-  padding: 18rem 18rem; }
+  padding: 18rem 18rem;
+  background-color: rgba(115, 162, 191, 0.3); }
   @media only screen and (max-width: 56.25em) {
     .section-three {
-      padding: 10rem 5rem; } }
+      padding: 17rem 0; } }
+
+.family-images {
+  display: grid;
+  align-content: center;
+  justify-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr 1fr 1fr auto; }
+  .family-images .family-img-1 {
+    z-index: 200;
+    width: 135%;
+    grid-row: 2 / 5;
+    grid-column: 3 / 4;
+    background-color: rgba(112, 94, 68, 0.5);
+    box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.1); }
+    @media only screen and (max-width: 37.5em) {
+      .family-images .family-img-1 {
+        width: 110%; } }
+  .family-images .family-img-2 {
+    z-index: 100;
+    width: 120%;
+    grid-column: 1 / 3;
+    grid-row: 1 / 4; }
+    @media only screen and (max-width: 37.5em) {
+      .family-images .family-img-2 {
+        width: 100%; } }
+
+.family-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 6rem 4rem; }
+  @media only screen and (max-width: 37.5em) {
+    .family-text {
+      text-align: left;
+      padding: 1rem; } }
+  .family-text h3 {
+    font-family: "Lumiera";
+    text-transform: uppercase;
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    line-height: 1.3;
+    font-weight: 500;
+    letter-spacing: 0.2rem; }
+  .family-text p {
+    font-size: 1.7rem;
+    line-height: 1.95; }
 
 .section-packages {
   padding: 15rem 10rem; }
-
-.section-prototype {
-  position: relative;
-  background-color: rgba(255, 234, 167, 0.6);
-  padding: 10rem 5rem; }
+  @media only screen and (max-width: 37.5em) {
+    .section-packages {
+      padding: 12rem 5rem; } }
 
 .section-four {
+  padding: 18rem 18rem; }
+  @media only screen and (max-width: 56.25em) {
+    .section-four {
+      padding: 10rem 5rem; } }
+
+.section-five {
   padding: 18rem 0;
   background-color: #f7f7f7; }
   @media only screen and (max-width: 56.25em) {
-    .section-four {
+    .section-five {
       padding: 10rem 2rem; } }
 
 .section {

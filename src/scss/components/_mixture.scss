@@ -114,11 +114,7 @@
 }
 
 .cta__box {
-  // background-color: chocolate;
-
   &-title {
-    font: bold 7.5em/1 'Playfair Display', serif;
-
     @include respond(phone) {
       font-size: 6.5em;
     }
@@ -127,5 +123,30 @@
   &-text {
     font-size: 1.9rem;
     margin-top: 4rem;
+  }
+}
+
+.mixture-logo {
+  z-index: 100;
+  top: 80px;
+  left: -320px;
+  position: absolute;
+  width: 40%;
+  overflow: hidden;
+  transition: all 0.3s ease-in;
+
+  @include respond(tab-land) {
+    top: 110px;
+    left: -170px;
+  }
+
+  @include respond(phone) {
+    width: 50%;
+    top: -109px;
+    left: 238px;
+  }
+
+  &:hover {
+    transform: scale(1.2);
   }
 }
