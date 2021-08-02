@@ -1,10 +1,8 @@
 .services {
-  background-color: rgba($color-white, 0.5);
   margin: 0 auto;
 }
 
 .wedding {
-  // background-color: lightcoral;
   position: relative;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -22,7 +20,6 @@
     grid-template-rows: repeat(6, 80px);
     grid-template-columns: repeat(6, 1fr);
     align-items: center;
-    // background-color: rgba(248, 244, 211, 0.664);
 
     @include respond(phone) {
       grid-template-rows: repeat(6, 60px);
@@ -58,7 +55,6 @@
       margin-left: -2rem;
       background-color: rgba($color-secondary, 0.6);
       box-shadow: 0 2rem 5rem rgba(#000, 0.3);
-      // outline: solid 3.3px rgba(43, 19, 19, 0.527);
       border-radius: 2px;
       z-index: 200;
 
@@ -88,16 +84,15 @@
     }
 
     h2 {
-      padding: 2.5rem 0;
-      font-family: Warm Memories Regular;
+      padding: 3.5rem 0;
       letter-spacing: 1.3px;
       text-transform: none;
       line-height: 1.35;
-      color: $color-primary-light;
-      font-size: 4rem;
+      color: rgba($color-secondary, 0.8);
+      font-size: 2rem;
 
       @include respond(phone) {
-        padding: 1rem 0;
+        padding: 2rem 0;
       }
     }
 
@@ -114,8 +109,7 @@
       font-size: 4.5rem;
       line-height: 1.35;
       font-weight: 500;
-      color: rgba($color-primary-dark, 0.8);
-      // color: rgba(253, 253, 253, 0.966);
+      // color: rgba($color-secondary, 0.8);
 
       @include respond(tab-port) {
         font-size: 3.5rem;
@@ -143,18 +137,17 @@
     }
 
     p {
-      padding-top: 10rem;
-      // background-color: rgb(128, 218, 240);
+      padding-top: 8rem;
       font-size: 1.7rem;
       line-height: 1.95;
 
       @include respond(tab-port) {
-        padding-top: 8.5rem;
+        padding-top: 7.5rem;
       }
 
       @include respond(phone) {
         text-align: right;
-        padding-top: 1rem;
+        padding-top: 0.5rem;
       }
     }
   }

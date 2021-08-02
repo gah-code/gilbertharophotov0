@@ -22833,6 +22833,8 @@ module.exports = "/wed-3.da704376.jpg";
 module.exports = "/wed-4.aaec434c.jpg";
 },{}],"resources/images/wedding/wed-5.jpg":[function(require,module,exports) {
 module.exports = "/wed-5.aff3dae1.jpg";
+},{}],"resources/images/wedding/wed-6.jpg":[function(require,module,exports) {
+module.exports = "/wed-6.c2bf0262.jpg";
 },{}],"resources/images/wedding/*.jpg":[function(require,module,exports) {
 module.exports = {
   "wed-1": require("./wed-1.jpg"),
@@ -22841,9 +22843,10 @@ module.exports = {
   "wed-2": require("./wed-2.jpg"),
   "wed-3": require("./wed-3.jpg"),
   "wed-4": require("./wed-4.jpg"),
-  "wed-5": require("./wed-5.jpg")
+  "wed-5": require("./wed-5.jpg"),
+  "wed-6": require("./wed-6.jpg")
 };
-},{"./wed-1.jpg":"resources/images/wedding/wed-1.jpg","./wed-2-b.jpg":"resources/images/wedding/wed-2-b.jpg","./wed-2-large.jpg":"resources/images/wedding/wed-2-large.jpg","./wed-2.jpg":"resources/images/wedding/wed-2.jpg","./wed-3.jpg":"resources/images/wedding/wed-3.jpg","./wed-4.jpg":"resources/images/wedding/wed-4.jpg","./wed-5.jpg":"resources/images/wedding/wed-5.jpg"}],"../node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
+},{"./wed-1.jpg":"resources/images/wedding/wed-1.jpg","./wed-2-b.jpg":"resources/images/wedding/wed-2-b.jpg","./wed-2-large.jpg":"resources/images/wedding/wed-2-large.jpg","./wed-2.jpg":"resources/images/wedding/wed-2.jpg","./wed-3.jpg":"resources/images/wedding/wed-3.jpg","./wed-4.jpg":"resources/images/wedding/wed-4.jpg","./wed-5.jpg":"resources/images/wedding/wed-5.jpg","./wed-6.jpg":"resources/images/wedding/wed-6.jpg"}],"../node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
 var bundleURL = null;
 
 function getBundleURLCached() {
@@ -22915,7 +22918,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./../resources/images/engagement/eng-1.jpg":[["eng-1.2db90b7f.jpg","resources/images/engagement/eng-1.jpg"],"resources/images/engagement/eng-1.jpg"],"./../resources/images/banner/banner-3.jpg":[["banner-3.76fbdcae.jpg","resources/images/banner/banner-3.jpg"],"resources/images/banner/banner-3.jpg"],"./../resources/images/banner/banner-1-large.jpg":[["banner-1-large.114c19d0.jpg","resources/images/banner/banner-1-large.jpg"],"resources/images/banner/banner-1-large.jpg"],"./../resources/images/banner/banner-1.jpg":[["banner-1.ae105e9b.jpg","resources/images/banner/banner-1.jpg"],"resources/images/banner/banner-1.jpg"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"js/main.js":[function(require,module,exports) {
+},{"./../resources/images/wedding/wed-6.jpg":[["wed-6.c2bf0262.jpg","resources/images/wedding/wed-6.jpg"],"resources/images/wedding/wed-6.jpg"],"./../resources/images/wedding/wed-2.jpg":[["wed-2.7da5ca50.jpg","resources/images/wedding/wed-2.jpg"],"resources/images/wedding/wed-2.jpg"],"./../resources/images/wedding/wed-3.jpg":[["wed-3.da704376.jpg","resources/images/wedding/wed-3.jpg"],"resources/images/wedding/wed-3.jpg"],"./../resources/images/banner/banner-3.jpg":[["banner-3.76fbdcae.jpg","resources/images/banner/banner-3.jpg"],"resources/images/banner/banner-3.jpg"],"./../resources/images/banner/banner-1-large.jpg":[["banner-1-large.114c19d0.jpg","resources/images/banner/banner-1-large.jpg"],"resources/images/banner/banner-1-large.jpg"],"./../resources/images/banner/banner-1.jpg":[["banner-1.ae105e9b.jpg","resources/images/banner/banner-1.jpg"],"resources/images/banner/banner-1.jpg"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"js/main.js":[function(require,module,exports) {
 "use strict";
 
 require("../js/animate");
@@ -22959,7 +22962,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49374" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49939" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

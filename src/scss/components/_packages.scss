@@ -2,15 +2,15 @@
 .family-box-a {
   margin-right: 1rem;
   padding: 2rem;
-  background-color: rgba($color-secondary-light, 0.6);
+  background-color: rgba($color-secondary-light, 0.4);
 
   h3 {
     font-weight: 300;
-    font-size: 2rem;
+    font-size: 2.8rem;
   }
 
   p {
-    font-size: 1.4rem;
+    font-size: $default-font-size;
   }
 }
 
@@ -22,42 +22,44 @@
 
   h3 {
     font-weight: 300;
-    font-size: 2rem;
+    font-size: 2.8rem;
   }
 
   p {
-    font-size: 1.4rem;
+    font-size: $default-font-size;
   }
 }
 
-.plan-box-one {
-  background-image: linear-gradient(
-      to right bottom,
-      rgba($color-secondary-light, 0.7),
-      rgba($color-secondary-light, 0.7)
-    ),
-    url(../resources/images/engagement/eng-1.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-}
+// .plan-box-one {
+//   background-image: linear-gradient(
+//       to right bottom,
+//       rgba($color-secondary-light, 0.4),
+//       rgba($color-secondary-light, 0.4)
+//     ),
+//     url(../resources/images/engagement/eng-1.jpg);
+//   background-size: contain;
+//   background-repeat: no-repeat;
+// }
 
-.plan-box-two {
-  background-image: linear-gradient(
-      to right bottom,
-      rgba($color-secondary-light, 0.7),
-      rgba($color-secondary-light, 0.7)
-    ),
-    url(../resources/images/banner/banner-3.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-}
+// .plan-box-two {
+//   background-image: linear-gradient(
+//       to right bottom,
+//       rgba($color-secondary-dark, 0.4),
+//       rgba($color-secondary-dark, 0.4)
+//     ),
+//     url(../resources/images/banner/banner-3.jpg);
+//   background-size: cover;
+//   background-repeat: no-repeat;
+// }
 
 .plan-box {
+  position: relative;
+  height: 52rem;
+  background-color: rgba($color-primary, 0.5);
   margin-top: 0.5rem;
-  // background-color: rgba($color-secondary-light, 0.6);
   border-radius: 5px;
   width: 90%;
-  box-shadow: 0 2px 2px #a3a3a3;
+  box-shadow: 0 1.5rem 4rem rgba($color-black, 0.4);
   transition: all 0.3s;
 
   &:hover {
@@ -77,7 +79,7 @@
     letter-spacing: 1px;
     text-transform: uppercase;
     font-weight: 300;
-    color: rgba($color-secondary, 0.9);
+    color: $color-white;
   }
 
   @include respond(phone) {
@@ -102,10 +104,10 @@
 }
 
 .plan-price {
-  font-size: 4rem;
+  font-size: 3.8rem;
   margin-bottom: 0.2rem;
   font-weight: 100;
-  color: $color-grey-dark-3;
+  color: $color-black;
   transition: all 0.1s;
 }
 
@@ -115,18 +117,23 @@
 }
 
 .plan-price-detail {
-  font-size: 1rem;
-  color: $color-grey-dark-3;
+  font-size: 1.3rem;
+  letter-spacing: 1.2px;
+  color: $color-primary-dark;
 }
 
 .plan-box ul {
-  font-size: 1.2rem;
+  font-size: 1.8rem;
   letter-spacing: 1px;
   list-style: none;
 }
 
 .plan-box ul li {
   padding: 1rem;
+
+  &:not(:last-child) {
+    border-bottom: 1px solid $color-grey-light-2;
+  }
 }
 
 .plan-price-btn {
@@ -149,5 +156,244 @@
   &:hover {
     box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
     background-color: rgba($color-primary-dark, 0.3);
+  }
+}
+
+.card {
+  // FUNCTIONALITY
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+  position: relative;
+  height: 52rem;
+
+  &__side {
+    height: 52rem;
+    transition: all 0.8s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 3px;
+    overflow: hidden;
+    box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
+
+    &--front {
+      background-color: $color-white;
+    }
+
+    &--back {
+      transform: rotateY(180deg);
+
+      &-1 {
+        background-image: linear-gradient(
+          to right bottom,
+          rgba($color-primary-light, 0.5),
+          rgba($color-primary, 0.7)
+        );
+      }
+
+      &-2 {
+        background-image: linear-gradient(
+          to right bottom,
+          rgba($color-primary-light, 0.5),
+          rgba($color-primary, 0.7)
+        );
+      }
+
+      &-3 {
+        background-image: linear-gradient(
+          to right bottom,
+          rgba($color-secondary-light, 0.7),
+          rgba($color-secondary-dark, 0.7)
+        );
+      }
+    }
+  }
+
+  &:hover &__side--front {
+    transform: rotateY(-180deg);
+  }
+
+  &:hover &__side--back {
+    transform: rotateY(0);
+  }
+
+  // FRONT SIDE STYLING
+  &__picture {
+    background-size: cover;
+    height: 23rem;
+    background-blend-mode: screen;
+
+    // -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    // clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+
+    &--1 {
+      background-image: linear-gradient(
+          to right bottom,
+          rgba($color-primary-light, 0.8),
+          rgba($color-primary, 0.7)
+        ),
+        url(../resources/images/wedding/wed-6.jpg);
+    }
+
+    &--2 {
+      background-image: linear-gradient(
+          to right bottom,
+          rgba($color-primary-light, 0.8),
+          rgba($color-primary, 0.7)
+        ),
+        url(../resources/images/wedding/wed-2.jpg);
+    }
+
+    &--3 {
+      background-image: linear-gradient(
+          to right bottom,
+          rgba($color-secondary-light, 0.7),
+          rgba($color-secondary-dark, 0.5)
+        ),
+        url(../resources/images/wedding/wed-3.jpg);
+    }
+  }
+
+  &__heading {
+    font-size: 2.8rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: right;
+    color: $color-white;
+    position: absolute;
+    top: 12rem;
+    right: 2rem;
+    width: 75%;
+  }
+
+  &__heading-span {
+    padding: 1rem 1.5rem;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+
+    &--1 {
+      background-image: linear-gradient(
+        to right bottom,
+        rgba($color-primary-light, 0.85),
+        rgba($color-primary, 0.85)
+      );
+    }
+
+    &--2 {
+      background-image: linear-gradient(
+        to right bottom,
+        rgba($color-primary-light, 0.85),
+        rgba($color-primary, 0.85)
+      );
+    }
+
+    &--3 {
+      background-image: linear-gradient(
+        to right bottom,
+        rgba($color-secondary-light, 0.85),
+        rgba($color-secondary-dark, 0.85)
+      );
+    }
+  }
+
+  &__details {
+    padding: 3rem;
+
+    ul {
+      list-style: none;
+      width: 80%;
+      margin: 0 auto;
+
+      li {
+        text-align: center;
+        font-size: 1.5rem;
+        padding: 1rem;
+
+        &:not(:last-child) {
+          border-bottom: 1px solid $color-grey-light-2;
+        }
+
+        i {
+          padding-right: 1.2rem;
+        }
+      }
+    }
+  }
+
+  // FRONT SIDE STYLING
+  &__cta {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    text-align: center;
+  }
+
+  &__price-box {
+    text-align: center;
+    color: $color-white;
+    margin-bottom: 8rem;
+  }
+
+  &__price-only {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+  }
+
+  &__price-value {
+    font-size: 6rem;
+    font-weight: 100;
+  }
+
+  //@include respond(tab-port) {
+  @media only screen and (max-width: 56.25em), only screen and (hover: none) {
+    height: auto;
+    border-radius: 3px;
+    background-color: $color-white;
+    box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
+
+    &__side {
+      height: auto;
+      position: relative;
+      box-shadow: none;
+
+      &--back {
+        transform: rotateY(0);
+
+        // clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
+      }
+    }
+
+    &:hover &__side--front {
+      transform: rotateY(0);
+    }
+
+    &__details {
+      padding: 2.5rem 3rem;
+    }
+
+    // FRONT SIDE STYLING
+    &__cta {
+      position: relative;
+      top: 0%;
+      left: 0;
+      transform: translate(0);
+      width: 100%;
+      padding: 7rem 4rem 4rem 4rem;
+    }
+
+    &__price-box {
+      margin-bottom: 3rem;
+    }
+
+    &__price-value {
+      font-size: 4rem;
+    }
   }
 }

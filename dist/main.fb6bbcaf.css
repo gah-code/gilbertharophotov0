@@ -45,12 +45,9 @@ body {
   color: #444; }
 
 .style-text {
-  font-family: Warm Memories Regular;
-  font-size: 6.5rem;
   letter-spacing: 1.3px;
-  text-transform: none;
   line-height: 1.35;
-  color: #73a2bf; }
+  color: #828957; }
 
 .heading-primary {
   text-transform: uppercase;
@@ -103,8 +100,14 @@ body {
 .u-center-text {
   text-align: center; }
 
+.u-mb-xs {
+  margin-bottom: 0.5rem; }
+
 .u-mb-m {
-  margin-bottom: 4rem; }
+  margin-bottom: 8rem; }
+
+.u-mb-l {
+  margin-bottom: 15rem; }
 
 .u-mt-m {
   margin-top: 3.5rem; }
@@ -155,7 +158,7 @@ body {
     cursor: pointer;
     font-size: 1.5rem;
     border-radius: 3rem;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: #6c584c;
     color: #f1efef;
     transition: all 0.3s; }
     @media only screen and (max-width: 56.25em) {
@@ -163,8 +166,8 @@ body {
         padding: 1.2rem 3rem; } }
     .form__book-btn:hover, .form:link:hover, .form:visited:hover {
       transform: translateY(-3px);
-      box-shadow: 0 1rem 2rem rgba(115, 162, 191, 0.6);
-      background-color: rgba(16, 29, 44, 0.8); }
+      box-shadow: 0 1rem 2rem rgba(187, 200, 147, 0.7);
+      background-color: rgba(130, 137, 87, 0.9); }
       .form__book-btn:hover::after, .form:link:hover::after, .form:visited:hover::after {
         transform: scaleX(1.4) scaleY(1.6);
         opacity: 0; }
@@ -183,7 +186,7 @@ body {
 
 .btn:hover {
   transform: translateY(-3px);
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
+  box-shadow: 0 1rem 2rem rgba(68, 68, 68, 0.2); }
   .btn:hover::after {
     transform: scaleX(1.4) scaleY(1.6);
     opacity: 0; }
@@ -191,25 +194,25 @@ body {
 .btn:active, .btn:focus {
   outline: none;
   transform: translateY(-1px);
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.8); }
+  box-shadow: 0 0.5rem 1rem rgba(68, 68, 68, 0.8); }
 
-.btn-white {
+.btn--white {
   background-color: #fff;
   color: #777; }
-  .btn-white::after {
+  .btn--white::after {
     background-color: #fff; }
 
 .btn-black {
   background-color: #333;
   color: #fff; }
   .btn-black::after {
-    background-color: #000; }
+    background-color: #444; }
 
 .btn-primary {
-  background-color: #101d2c;
+  background-color: #828957;
   color: #fff; }
   .btn-primary::after {
-    background-color: #000; }
+    background-color: #444; }
 
 @media only screen and (max-width: 37.5em) {
   .btn {
@@ -259,7 +262,7 @@ body {
   margin-right: 2rem;
   justify-self: end;
   align-self: center;
-  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1.5rem 4rem rgba(68, 68, 68, 0.1);
   border-radius: 2px; }
   @media only screen and (max-width: 56.25em) {
     .hero__content-img-right {
@@ -321,7 +324,7 @@ body {
     text-transform: uppercase;
     letter-spacing: -1px;
     font-style: normal;
-    color: rgba(16, 29, 44, 0.8);
+    color: rgba(130, 137, 87, 0.8);
     place-self: center;
     font-size: 4.5rem;
     margin-bottom: 5rem;
@@ -365,7 +368,7 @@ body {
     grid-row: 5 / 6;
     grid-column: 1 / 5;
     padding: 0 1rem;
-    color: rgba(93, 124, 166, 0.9);
+    color: rgba(108, 129, 82, 0.9);
     line-height: 1;
     width: 100%;
     font-family: "Warm Memories Regular";
@@ -390,7 +393,7 @@ body {
 .hero__content-img-one {
   grid-column: 5 / 7;
   width: 100%;
-  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1.5rem 4rem rgba(68, 68, 68, 0.1);
   border-radius: 2px; }
   @media only screen and (max-width: 37.5em) {
     .hero__content-img-one {
@@ -402,7 +405,7 @@ body {
   grid-column: 4 / 5;
   width: 110%;
   z-index: 100;
-  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1.5rem 4rem rgba(68, 68, 68, 0.1);
   border-radius: 2px; }
   @media only screen and (max-width: 37.5em) {
     .hero__content-img-two {
@@ -459,7 +462,7 @@ body {
   position: absolute;
   z-index: 10;
   transition: all 0.2s;
-  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+  box-shadow: 0 1.5rem 4rem rgba(68, 68, 68, 0.4);
   border-radius: 2px; }
   @media only screen and (max-width: 56.25em) {
     .container__photo {
@@ -504,7 +507,7 @@ body {
         top: 1rem; } }
 
 .cta__wrapper {
-  background-color: rgba(255, 234, 167, 0.9);
+  background-color: rgba(230, 197, 104, 0.4);
   box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.1);
   grid-column: 1 / 2;
   grid-row: 1 / 4;
@@ -548,44 +551,37 @@ body {
 .family-box-a {
   margin-right: 1rem;
   padding: 2rem;
-  background-color: rgba(255, 234, 167, 0.6); }
+  background-color: rgba(230, 197, 104, 0.4); }
   .family-box-a h3 {
     font-weight: 300;
-    font-size: 2rem; }
+    font-size: 2.8rem; }
   .family-box-a p {
-    font-size: 1.4rem; }
+    font-size: 1.6rem; }
 
 .family-box-b {
   margin-right: 1rem;
   margin-top: 4rem;
   padding: 1.5rem;
-  border-left: solid 3px #705e44; }
+  border-left: solid 3px #6c584c; }
   .family-box-b h3 {
     font-weight: 300;
-    font-size: 2rem; }
+    font-size: 2.8rem; }
   .family-box-b p {
-    font-size: 1.4rem; }
-
-.plan-box-one {
-  background-image: linear-gradient(to right bottom, rgba(255, 234, 167, 0.7), rgba(255, 234, 167, 0.7)), url(/eng-1.2db90b7f.jpg);
-  background-size: cover;
-  background-repeat: no-repeat; }
-
-.plan-box-two {
-  background-image: linear-gradient(to right bottom, rgba(255, 234, 167, 0.7), rgba(255, 234, 167, 0.7)), url(/banner-3.76fbdcae.jpg);
-  background-size: cover;
-  background-repeat: no-repeat; }
+    font-size: 1.6rem; }
 
 .plan-box {
+  position: relative;
+  height: 52rem;
+  background-color: rgba(108, 129, 82, 0.5);
   margin-top: 0.5rem;
   border-radius: 5px;
   width: 90%;
-  box-shadow: 0 2px 2px #a3a3a3;
+  box-shadow: 0 1.5rem 4rem rgba(68, 68, 68, 0.4);
   transition: all 0.3s; }
   .plan-box:hover {
     transform: translateY(-3px);
-    box-shadow: 0 1rem 2rem rgba(16, 29, 44, 0.6);
-    background-color: rgba(93, 124, 166, 0.2);
+    box-shadow: 0 1rem 2rem rgba(130, 137, 87, 0.6);
+    background-color: rgba(108, 129, 82, 0.2);
     background-image: none; }
     .plan-box:hover::after {
       transform: scaleX(1.4) scaleY(1.6);
@@ -595,7 +591,7 @@ body {
     letter-spacing: 1px;
     text-transform: uppercase;
     font-weight: 300;
-    color: rgba(112, 94, 68, 0.9); }
+    color: #fff; }
   @media only screen and (max-width: 37.5em) {
     .plan-box {
       margin-top: 5rem;
@@ -614,10 +610,10 @@ body {
   border: 0; }
 
 .plan-price {
-  font-size: 4rem;
+  font-size: 3.8rem;
   margin-bottom: 0.2rem;
   font-weight: 100;
-  color: #333;
+  color: #444;
   transition: all 0.1s; }
 
 .plan-price span {
@@ -625,16 +621,19 @@ body {
   font-weight: 300; }
 
 .plan-price-detail {
-  font-size: 1rem;
-  color: #333; }
+  font-size: 1.3rem;
+  letter-spacing: 1.2px;
+  color: #828957; }
 
 .plan-box ul {
-  font-size: 1.2rem;
+  font-size: 1.8rem;
   letter-spacing: 1px;
   list-style: none; }
 
 .plan-box ul li {
   padding: 1rem; }
+  .plan-box ul li:not(:last-child) {
+    border-bottom: 1px solid #eee; }
 
 .plan-price-btn, .plan-price-btn:link, .plan-price-btn:visited {
   text-transform: uppercase;
@@ -647,14 +646,135 @@ body {
   font-size: 1.6rem;
   border: none;
   cursor: pointer;
-  color: #000; }
+  color: #444; }
 
 .plan-price-btn:hover {
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
-  background-color: rgba(16, 29, 44, 0.3); }
+  box-shadow: 0 1rem 2rem rgba(68, 68, 68, 0.2);
+  background-color: rgba(130, 137, 87, 0.3); }
+
+.card {
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+  position: relative;
+  height: 52rem; }
+  .card__side {
+    height: 52rem;
+    transition: all 0.8s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 3px;
+    overflow: hidden;
+    box-shadow: 0 1.5rem 4rem rgba(68, 68, 68, 0.15); }
+    .card__side--front {
+      background-color: #fff; }
+    .card__side--back {
+      transform: rotateY(180deg); }
+      .card__side--back-1 {
+        background-image: linear-gradient(to right bottom, rgba(187, 200, 147, 0.5), rgba(108, 129, 82, 0.7)); }
+      .card__side--back-2 {
+        background-image: linear-gradient(to right bottom, rgba(187, 200, 147, 0.5), rgba(108, 129, 82, 0.7)); }
+      .card__side--back-3 {
+        background-image: linear-gradient(to right bottom, rgba(230, 197, 104, 0.7), rgba(207, 154, 94, 0.7)); }
+  .card:hover .card__side--front {
+    transform: rotateY(-180deg); }
+  .card:hover .card__side--back {
+    transform: rotateY(0); }
+  .card__picture {
+    background-size: cover;
+    height: 23rem;
+    background-blend-mode: screen;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px; }
+    .card__picture--1 {
+      background-image: linear-gradient(to right bottom, rgba(187, 200, 147, 0.8), rgba(108, 129, 82, 0.7)), url(/wed-6.c2bf0262.jpg); }
+    .card__picture--2 {
+      background-image: linear-gradient(to right bottom, rgba(187, 200, 147, 0.8), rgba(108, 129, 82, 0.7)), url(/wed-2.7da5ca50.jpg); }
+    .card__picture--3 {
+      background-image: linear-gradient(to right bottom, rgba(230, 197, 104, 0.7), rgba(207, 154, 94, 0.5)), url(/wed-3.da704376.jpg); }
+  .card__heading {
+    font-size: 2.8rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: right;
+    color: #fff;
+    position: absolute;
+    top: 12rem;
+    right: 2rem;
+    width: 75%; }
+  .card__heading-span {
+    padding: 1rem 1.5rem;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone; }
+    .card__heading-span--1 {
+      background-image: linear-gradient(to right bottom, rgba(187, 200, 147, 0.85), rgba(108, 129, 82, 0.85)); }
+    .card__heading-span--2 {
+      background-image: linear-gradient(to right bottom, rgba(187, 200, 147, 0.85), rgba(108, 129, 82, 0.85)); }
+    .card__heading-span--3 {
+      background-image: linear-gradient(to right bottom, rgba(230, 197, 104, 0.85), rgba(207, 154, 94, 0.85)); }
+  .card__details {
+    padding: 3rem; }
+    .card__details ul {
+      list-style: none;
+      width: 80%;
+      margin: 0 auto; }
+      .card__details ul li {
+        text-align: center;
+        font-size: 1.5rem;
+        padding: 1rem; }
+        .card__details ul li:not(:last-child) {
+          border-bottom: 1px solid #eee; }
+        .card__details ul li i {
+          padding-right: 1.2rem; }
+  .card__cta {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    text-align: center; }
+  .card__price-box {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 8rem; }
+  .card__price-only {
+    font-size: 1.4rem;
+    text-transform: uppercase; }
+  .card__price-value {
+    font-size: 6rem;
+    font-weight: 100; }
+  @media only screen and (max-width: 56.25em), only screen and (hover: none) {
+    .card {
+      height: auto;
+      border-radius: 3px;
+      background-color: #fff;
+      box-shadow: 0 1.5rem 4rem rgba(68, 68, 68, 0.15); }
+      .card__side {
+        height: auto;
+        position: relative;
+        box-shadow: none; }
+        .card__side--back {
+          transform: rotateY(0); }
+      .card:hover .card__side--front {
+        transform: rotateY(0); }
+      .card__details {
+        padding: 2.5rem 3rem; }
+      .card__cta {
+        position: relative;
+        top: 0%;
+        left: 0;
+        transform: translate(0);
+        width: 100%;
+        padding: 7rem 4rem 4rem 4rem; }
+      .card__price-box {
+        margin-bottom: 3rem; }
+      .card__price-value {
+        font-size: 4rem; } }
 
 .services {
-  background-color: rgba(255, 255, 255, 0.5);
   margin: 0 auto; }
 
 .wedding {
@@ -685,7 +805,7 @@ body {
       grid-column: 1 / 4;
       z-index: 100;
       border-radius: 2px;
-      background-color: rgba(112, 94, 68, 0.6);
+      background-color: rgba(108, 88, 76, 0.6);
       box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.2); }
       @media only screen and (max-width: 56.25em) {
         .wedding .wedding__pictures .wedding__img--1 {
@@ -700,7 +820,7 @@ body {
       grid-row: 3 / 4;
       grid-column: 4 / 7;
       margin-left: -2rem;
-      background-color: rgba(112, 94, 68, 0.6);
+      background-color: rgba(108, 88, 76, 0.6);
       box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.3);
       border-radius: 2px;
       z-index: 200; }
@@ -724,16 +844,15 @@ body {
         align-items: flex-end;
         justify-content: start; } }
     .wedding__content h2 {
-      padding: 2.5rem 0;
-      font-family: Warm Memories Regular;
+      padding: 3.5rem 0;
       letter-spacing: 1.3px;
       text-transform: none;
       line-height: 1.35;
-      color: #73a2bf;
-      font-size: 4rem; }
+      color: rgba(108, 88, 76, 0.8);
+      font-size: 2rem; }
       @media only screen and (max-width: 37.5em) {
         .wedding__content h2 {
-          padding: 1rem 0; } }
+          padding: 2rem 0; } }
     .wedding__content h3 {
       font-family: "Lumiera";
       font-weight: 400;
@@ -746,8 +865,7 @@ body {
       white-space: nowrap;
       font-size: 4.5rem;
       line-height: 1.35;
-      font-weight: 500;
-      color: rgba(16, 29, 44, 0.8); }
+      font-weight: 500; }
       @media only screen and (max-width: 56.25em) {
         .wedding__content h3 {
           font-size: 3.5rem;
@@ -770,16 +888,16 @@ body {
           padding-bottom: 1rem;
           line-height: 1.65; } }
     .wedding__content p {
-      padding-top: 10rem;
+      padding-top: 8rem;
       font-size: 1.7rem;
       line-height: 1.95; }
       @media only screen and (max-width: 56.25em) {
         .wedding__content p {
-          padding-top: 8.5rem; } }
+          padding-top: 7.5rem; } }
       @media only screen and (max-width: 37.5em) {
         .wedding__content p {
           text-align: right;
-          padding-top: 1rem; } }
+          padding-top: 0.5rem; } }
 
 .icon::before {
   font-family: "Font Awesome 5 Free";
@@ -798,7 +916,7 @@ body {
       grid-template-rows: 0.7fr 1fr; } }
   .about__pictures {
     background-color: #f7f7f7;
-    background-image: linear-gradient(90deg, rgba(255, 234, 167, 0.4), rgba(112, 94, 68, 0.3)), url(/banner-3.76fbdcae.jpg);
+    background-image: linear-gradient(90deg, rgba(230, 197, 104, 0.3), rgba(108, 88, 76, 0.3)), url(/banner-3.76fbdcae.jpg);
     background-size: cover;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
@@ -830,7 +948,7 @@ body {
         width: 110%; } }
   .about__content {
     display: grid;
-    background-color: rgba(255, 234, 167, 0.8);
+    background-color: rgba(230, 197, 104, 0.4);
     grid-column: 2 / 3;
     align-content: center;
     justify-items: center;
@@ -843,27 +961,26 @@ body {
         grid-column: 1 / 2; } }
   .about__heading-1 {
     justify-self: left;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     letter-spacing: 1.7px;
     text-transform: uppercase;
     margin-bottom: 0.1rem;
-    color: rgba(16, 29, 44, 0.2); }
+    color: rgba(130, 137, 87, 0.8); }
   .about__heading-2 {
     justify-self: left;
-    font-size: 3.2rem;
+    font-size: 3rem;
     letter-spacing: 2px;
     letter-spacing: 2px;
     margin-bottom: 0.5rem; }
   .about__text {
     font-size: 1.3rem;
-    font-style: italic;
     margin-bottom: 4rem; }
     @media only screen and (max-width: 56.25em) {
       .about__text {
         margin-bottom: 2rem; } }
 
 .footer {
-  background-color: rgba(115, 162, 191, 0.3);
+  background-color: rgba(68, 68, 68, 0.9);
   padding: 7rem 0;
   font-size: 1.4rem;
   color: #fff; }
@@ -874,7 +991,7 @@ body {
     width: 15rem;
     height: auto; }
   .footer__navigation {
-    border-top: 5px soild #73a2bf;
+    border-top: 5px soild #bbc893;
     padding-top: 2rem;
     display: inline-block; }
   .footer__list {
@@ -1002,14 +1119,14 @@ body {
     padding: 1.2rem 2.2rem; }
   .header .header__btn:hover {
     transform: translateY(-3px);
-    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
+    box-shadow: 0 1rem 2rem rgba(68, 68, 68, 0.2); }
     .header .header__btn:hover::after {
       transform: scaleX(1.4) scaleY(1.6);
       opacity: 0; }
   .header .header__btn:active, .header .header__btn:focus {
     outline: none;
     transform: translateY(-1px);
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.8); }
+    box-shadow: 0 0.5rem 1rem rgba(68, 68, 68, 0.8); }
   .header .header__btn-one {
     justify-self: center;
     margin-right: 5rem;
@@ -1018,12 +1135,12 @@ body {
     .header .header__btn-one::after {
       background-color: #fff; }
   .header .header__btn-two {
-    border: solid 1.2px #705e44;
+    border: solid 1.2px #6c584c;
     justify-self: start;
-    color: #705e44;
+    color: #6c584c;
     background-color: #f7f7f7; }
     .header .header__btn-two::after {
-      background-color: #705e44; }
+      background-color: #6c584c; }
   .header .header__img {
     width: 100%;
     grid-column: 2 / 3;
@@ -1053,7 +1170,7 @@ body {
   z-index: -1;
   opacity: 1;
   transform: scale(1.07, 1.05);
-  background-color: rgba(112, 94, 68, 0.8); }
+  background-color: rgba(108, 88, 76, 0.8); }
 
 .navigation {
   width: 100%;
@@ -1108,7 +1225,7 @@ body {
     color: #fff;
     text-decoration: none;
     text-transform: uppercase;
-    background-color: #705e44;
+    background-color: #6c584c;
     padding: 1rem 2.5rem;
     border-radius: 10rem;
     letter-spacing: 1px;
@@ -1116,8 +1233,8 @@ body {
     transition: all 0.2s; }
     .navigation__link:hover {
       transform: translateY(-3px);
-      box-shadow: 0 1rem 2rem rgba(16, 29, 44, 0.8);
-      background-color: rgba(16, 29, 44, 0.9); }
+      box-shadow: 0 1rem 2rem rgba(130, 137, 87, 0.8);
+      background-color: rgba(130, 137, 87, 0.9); }
       .navigation__link:hover::after {
         transform: scaleX(1.4) scaleY(1.6);
         opacity: 0; }
@@ -1153,14 +1270,17 @@ body {
 
 .section-two {
   padding: 10rem 5rem;
-  background-color: rgba(255, 234, 167, 0.5); }
+  background-color: rgba(108, 129, 82, 0.2); }
   @media only screen and (max-width: 37.5em) {
     .section-two {
       padding: 15rem 5rem; } }
 
+.section-wedding-packages {
+  padding: 10rem 5rem; }
+
 .section-three {
   padding: 18rem 18rem;
-  background-color: rgba(115, 162, 191, 0.3); }
+  background-color: rgba(230, 197, 104, 0.4); }
   @media only screen and (max-width: 56.25em) {
     .section-three {
       padding: 17rem 0; } }
@@ -1176,7 +1296,6 @@ body {
     width: 135%;
     grid-row: 2 / 5;
     grid-column: 3 / 4;
-    background-color: rgba(112, 94, 68, 0.5);
     box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.1); }
     @media only screen and (max-width: 37.5em) {
       .family-images .family-img-1 {
@@ -1250,7 +1369,7 @@ body {
   font-size: 1.8rem;
   font-weight: 600;
   text-transform: uppercase;
-  color: rgba(16, 29, 44, 0.5);
+  color: rgba(130, 137, 87, 0.5);
   margin: 7rem 0 2rem 0; }
   @media only screen and (max-width: 56.25em) {
     .section__description {

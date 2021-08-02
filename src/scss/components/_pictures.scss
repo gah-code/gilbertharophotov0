@@ -11,7 +11,7 @@
     background-color: $color-grey-light-1;
     background-image: linear-gradient(
         90deg,
-        rgba($color-secondary-light, 0.4),
+        rgba($color-secondary-light, 0.3),
         rgba($color-secondary, 0.3)
       ),
       url(../resources/images/banner/banner-3.jpg);
@@ -55,7 +55,7 @@
 
   &__content {
     display: grid;
-    background-color: rgba($color-secondary-light, 0.8);
+    background-color: rgba($color-secondary-light, 0.4);
     grid-column: 2 / 3;
     align-content: center;
     justify-items: center;
@@ -71,16 +71,16 @@
 
   &__heading-1 {
     justify-self: left;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     letter-spacing: 1.7px;
     text-transform: uppercase;
     margin-bottom: 0.1rem;
-    color: rgba($color-primary-dark, 0.2);
+    color: rgba($color-primary-dark, 0.8);
   }
 
   &__heading-2 {
     justify-self: left;
-    font-size: 3.2rem;
+    font-size: 3rem;
     letter-spacing: 2px;
     letter-spacing: 2px;
     margin-bottom: 0.5rem;
@@ -88,7 +88,7 @@
 
   &__text {
     font-size: 1.3rem;
-    font-style: italic;
+    // font-style: italic;
     margin-bottom: 4rem;
 
     @include respond(tab-port) {

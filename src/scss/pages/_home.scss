@@ -25,17 +25,22 @@
 //// SERVICES
 .section-two {
   padding: 10rem 5rem;
-  background-color: rgba($color-secondary-light, 0.5);
+  background-color: rgba($color-primary, 0.2);
 
   @include respond(phone) {
     padding: 15rem 5rem;
   }
 }
 
+// WEDDING PACKAGES
+.section-wedding-packages {
+  padding: 10rem 5rem;
+}
+
 //// FAMILY
 .section-three {
   padding: 18rem 18rem;
-  background-color: rgba($color-primary-light, 0.3);
+  background-color: rgba($color-secondary-light, 0.4);
 
   @include respond(tab-port) {
     padding: 17rem 0;
@@ -43,7 +48,6 @@
 }
 
 .family-images {
-  // background-color: lightcoral;
   display: grid;
   align-content: center;
   justify-items: center;
@@ -55,7 +59,6 @@
     width: 135%;
     grid-row: 2 / 5;
     grid-column: 3 / 4;
-    background-color: rgba($color-secondary, 0.5);
     box-shadow: 0 2rem 5rem rgba(#000, 0.1);
 
     @include respond(phone) {
@@ -76,7 +79,6 @@
 }
 
 .family-text {
-  // background-color: lightseagreen;
   display: flex;
   flex-direction: column;
   justify-content: center;
