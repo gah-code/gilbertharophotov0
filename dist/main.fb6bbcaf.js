@@ -22918,7 +22918,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./../resources/images/wedding/wed-6.jpg":[["wed-6.c2bf0262.jpg","resources/images/wedding/wed-6.jpg"],"resources/images/wedding/wed-6.jpg"],"./../resources/images/wedding/wed-2.jpg":[["wed-2.7da5ca50.jpg","resources/images/wedding/wed-2.jpg"],"resources/images/wedding/wed-2.jpg"],"./../resources/images/wedding/wed-3.jpg":[["wed-3.da704376.jpg","resources/images/wedding/wed-3.jpg"],"resources/images/wedding/wed-3.jpg"],"./../resources/images/banner/banner-3.jpg":[["banner-3.76fbdcae.jpg","resources/images/banner/banner-3.jpg"],"resources/images/banner/banner-3.jpg"],"./../resources/images/banner/banner-1-large.jpg":[["banner-1-large.114c19d0.jpg","resources/images/banner/banner-1-large.jpg"],"resources/images/banner/banner-1-large.jpg"],"./../resources/images/banner/banner-1.jpg":[["banner-1.ae105e9b.jpg","resources/images/banner/banner-1.jpg"],"resources/images/banner/banner-1.jpg"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"js/main.js":[function(require,module,exports) {
+},{"./../resources/images/wedding/wed-6.jpg":[["wed-6.c2bf0262.jpg","resources/images/wedding/wed-6.jpg"],"resources/images/wedding/wed-6.jpg"],"./../resources/images/wedding/wed-2.jpg":[["wed-2.7da5ca50.jpg","resources/images/wedding/wed-2.jpg"],"resources/images/wedding/wed-2.jpg"],"./../resources/images/wedding/wed-3.jpg":[["wed-3.da704376.jpg","resources/images/wedding/wed-3.jpg"],"resources/images/wedding/wed-3.jpg"],"./../resources/images/family/fam-4.jpg":[["fam-4.1f68f66f.jpg","resources/images/family/fam-4.jpg"],"resources/images/family/fam-4.jpg"],"./../resources/images/family/fam-3.jpg":[["fam-3.62fc2777.jpg","resources/images/family/fam-3.jpg"],"resources/images/family/fam-3.jpg"],"./../resources/images/banner/banner-3.jpg":[["banner-3.76fbdcae.jpg","resources/images/banner/banner-3.jpg"],"resources/images/banner/banner-3.jpg"],"./../resources/images/banner/banner-1-large.jpg":[["banner-1-large.114c19d0.jpg","resources/images/banner/banner-1-large.jpg"],"resources/images/banner/banner-1-large.jpg"],"./../resources/images/banner/banner-1.jpg":[["banner-1.ae105e9b.jpg","resources/images/banner/banner-1.jpg"],"resources/images/banner/banner-1.jpg"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"js/main.js":[function(require,module,exports) {
 "use strict";
 
 require("../js/animate");
@@ -22962,7 +22962,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49939" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51641" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

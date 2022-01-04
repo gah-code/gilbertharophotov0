@@ -42,6 +42,7 @@ body {
   display: inline-block;
   letter-spacing: 0.1rem;
   transition: all 0.2s;
+  position: relative;
 
   &:hover {
     transform: skewX(5deg);
@@ -49,6 +50,21 @@ body {
 
   @include respond(phone) {
     font-size: 4rem;
+    // margin-left: 0.2rem;
+    text-align: center;
+  }
+}
+
+[class^="icon"] {
+  float: left;
+  position: relative;
+  left: 33px;
+  top: -113px;
+  width: 255px;
+  height: 255px;
+
+  @include respond(phone) {
+    display: none;
   }
 }
 

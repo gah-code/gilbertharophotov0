@@ -2,10 +2,23 @@
   // background-color:
   padding: 20rem 0rem;
   background-color: #fff;
+  // background-image: linear-gradient(
+  //     90deg,
+  //     rgba($color-white, 0.8) 35%,
+  //     rgba($color-white, 0.8) -70%,
+  //     transparent 85%
+  //   ),
+  //   url(../resources/images/paper-background.png);
+
+  // background-size: cover;
+  // background-position: center;
+  // position: relative;
+  // background-repeat: no-repeat;
+  // width: 100%;
 
   @include respond(tab-port) {
-    margin-top: -10rem;
-    padding: 20rem 1rem;
+    // padding: 20rem 1rem;
+    padding: 15rem 1rem;
   }
 }
 
@@ -34,8 +47,15 @@
 
 // WEDDING PACKAGES
 .section-wedding-packages {
-  padding: 10rem 5rem;
+  padding: 15rem 5rem;
 }
+// .icon-rings {
+//   @include respond(phone) {
+//     padding-top: 8rem;
+//     padding-right: 4rem;
+//     width: 50%;
+//   }
+// }
 
 //// FAMILY
 .section-three {

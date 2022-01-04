@@ -1,0 +1,355 @@
+.cardPrimary {
+  position: relative;
+  height: auto;
+  transition: all 0.2s;
+
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 1rem 2rem rgba($color-primary-light, 0.6);
+
+    &::after {
+      transform: scaleX(1.4) scaleY(1.6);
+      opacity: 0;
+    }
+  }
+
+  &--gold {
+    &:hover {
+      box-shadow: 0 1rem 2rem rgba($color-secondary-light, 0.6);
+    }
+  }
+
+  &__side {
+    height: auto;
+    transition: all 0.8s ease;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-radius: 3px;
+    overflow: hidden;
+    background-color: $color-white;
+    box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
+
+    // &--front {
+    // background-color: $color-white;
+
+    &--1 {
+      background-image: linear-gradient(
+        to right bottom,
+        rgba($color-primary-light, 0.5),
+        rgba($color-primary-light, 0.2)
+      );
+    }
+
+    &--2 {
+      background-image: linear-gradient(
+        to right bottom,
+        rgba($color-primary-light, 0.5),
+        rgba($color-primary-light, 0.2)
+      );
+    }
+
+    &--3 {
+      background-image: linear-gradient(
+        to right bottom,
+        rgba($color-secondary-light, 0.5),
+        rgba($color-secondary-light, 0.2)
+      );
+    }
+
+    &--white {
+      background-color: rgba($color-white, 0.45);
+    }
+  }
+
+  // &:hover &__side--front {
+  //   transform: rotateY(0);
+  // }
+
+  // FRONT SIDE STYLING
+  &__picture {
+    background-size: cover;
+    height: 20rem;
+    background-blend-mode: screen;
+    // // -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    // clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+
+    &--1 {
+      background-image: linear-gradient(
+          to right bottom,
+          rgba($color-primary-light, 0.8),
+          rgba($color-primary, 0.7)
+        ),
+        url(../resources/images/wedding/wed-6.jpg);
+    }
+
+    &--2 {
+      background-image: linear-gradient(
+          to right bottom,
+          rgba($color-primary-light, 0.8),
+          rgba($color-primary, 0.7)
+        ),
+        url(../resources/images/wedding/wed-2.jpg);
+    }
+
+    &--3 {
+      background-image: linear-gradient(
+          to right bottom,
+          rgba($color-secondary-light, 0.8),
+          rgba($color-secondary, 0.7)
+        ),
+        url(../resources/images/wedding/wed-3.jpg);
+    }
+
+    &--4 {
+      background-image: linear-gradient(
+          to right bottom,
+          rgba($color-primary-light, 0.8),
+          rgba($color-secondary, 0.7)
+        ),
+        url(../resources/images/family/fam-4.jpg);
+    }
+
+    &--5 {
+      background-image: linear-gradient(
+          to right bottom,
+          rgba($color-primary-light, 0.8),
+          rgba($color-secondary, 0.7)
+        ),
+        url(../resources/images/family/fam-3.jpg);
+    }
+  }
+
+  &__heading {
+    font-size: 2.8rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: right;
+    color: $color-white;
+    position: absolute;
+    top: 12rem;
+    right: 2rem;
+    width: 75%;
+  }
+
+  &__headingSecondary {
+    font-size: 2.8rem;
+    position: absolute;
+    top: 3rem;
+    left: 2rem;
+    font-weight: 300;
+    text-transform: uppercase;
+  }
+
+  &__heading-span {
+    padding: 1rem 1.5rem;
+    box-decoration-break: clone;
+
+    &--1 {
+      background-image: linear-gradient(
+        to right bottom,
+        rgba($color-primary-light, 0.85),
+        rgba($color-primary, 0.85)
+      );
+    }
+
+    &--2 {
+      background-image: linear-gradient(
+        to right bottom,
+        rgba($color-primary-light, 0.85),
+        rgba($color-primary, 0.85)
+      );
+    }
+
+    &--3 {
+      background-image: linear-gradient(
+        to right bottom,
+        rgba($color-secondary-light, 0.85),
+        rgba($color-secondary-dark, 0.85)
+      );
+    }
+  }
+
+  &__location {
+    position: absolute;
+    top: 7.6rem;
+    left: 2rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: 2.3px;
+  }
+
+  &__details {
+    padding: 3rem;
+
+    ul {
+      list-style: none;
+      width: 80%;
+      margin: 0 auto;
+
+      li {
+        text-align: center;
+        font-size: 1.4rem;
+        padding: 1rem;
+
+        &:not(:last-child) {
+          border-bottom: 1px solid $color-grey-light-2;
+        }
+
+        i {
+          padding-right: 1.2rem;
+        }
+      }
+    }
+  }
+
+  .cardPrimary__details-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 1.75rem;
+    column-gap: 2rem;
+    padding: 2.5rem 2.8rem;
+
+    @include respond(phone) {
+      padding: 2rem 3rem;
+      column-gap: 3rem;
+    }
+  }
+
+  .cardPrimary__sub-heading {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    grid-column: 1 / -1;
+  }
+
+  .cardPrimary__text {
+    font-size: 1.6rem;
+    grid-column: 1 / -1;
+    font-style: italic;
+    margin-top: -1rem;
+    margin-bottom: 0.85rem;
+  }
+
+  .cardPrimary__data {
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+  }
+
+  .cardPrimary__data svg {
+    margin-right: 0.8rem;
+  }
+
+  .cardPrimary__icon {
+    height: 2.1rem;
+    width: 2.1rem;
+    fill: #444;
+  }
+
+  &__cta {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    column-gap: 2rem;
+    padding: 1.5rem;
+    justify-items: center;
+    align-items: center;
+    position: relative;
+    border-top: solid 1px $color-grey-light-2;
+
+    &--1 {
+      background-image: linear-gradient(
+        to right bottom,
+        rgba($color-primary-light, 0.45),
+        rgba($color-primary, 0.45)
+      );
+    }
+
+    &--2 {
+      background-image: linear-gradient(
+        to right bottom,
+        rgba($color-primary-light, 0.45),
+        rgba($color-primary, 0.45)
+      );
+    }
+
+    &--3 {
+      background-image: linear-gradient(
+        to right bottom,
+        rgba($color-secondary-light, 0.45),
+        rgba($color-secondary-light, 0.45)
+      );
+    }
+
+    &--4 {
+      background-image: linear-gradient(
+        to right bottom,
+        rgba($color-white, 0.45),
+        rgba($color-white, 0.45)
+      );
+    }
+
+    &-btn {
+      &,
+      &:link,
+      &:visited {
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 1rem 1rem;
+        display: inline-block;
+        border-radius: 4rem;
+        transition: all 0.2s;
+        position: relative;
+        font-size: $default-font-size;
+        border: none;
+        cursor: pointer;
+        color: $color-grey-dark;
+        background-color: $color-white;
+
+        @include respond(phone) {
+          padding: 1.5rem 3rem;
+        }
+      }
+
+      &:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
+      }
+
+      &::after {
+        transform: scaleX(1.4) scaleY(1.8);
+      }
+    }
+
+    .cardPrimary__cta-btn--2 {
+      border: solid 2px rgba($color-secondary-light, 0.9);
+      background-color: none;
+      color: $color-grey-dark;
+    }
+  }
+
+  &__price-box {
+    margin-bottom: 0.5rem;
+  }
+
+  &__price-only {
+    display: flex;
+    font-size: 1.5rem;
+    align-self: center;
+    text-transform: uppercase;
+  }
+
+  &__price-value {
+    font-size: 3rem;
+    letter-spacing: 1.1px;
+    font-weight: 100;
+
+    @include respond(phone) {
+      font-size: 3.5rem;
+    }
+  }
+}
